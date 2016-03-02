@@ -35,10 +35,25 @@
     </div>
   </div>
 
+  <div class="row">
+          <div class="col-md-12">
+            <h4>Selector-Based Filter</h4>
+            <div class="btn-group" opt-kind="" ok-key="filter">
+              <button type="button" class="btn btn-default active" ok-sel="*">Show All</button>
+              <button type="button" class="btn btn-default" ok-sel=".purple">Purple</button>
+              <button type="button" class="btn btn-default" ok-sel=".orange">Orange</button>
+              <button type="button" class="btn btn-default" ok-sel=".blue">Blue</button>
+              <button type="button" class="btn btn-default" ok-sel=".green">Green</button>
+              <button type="button" class="btn btn-default" ok-sel=":not(.blue)">Not Blue</button>
+              <button type="button" class="btn btn-default" ok-sel="#extra">Extra Only</button>
+            </div>
+          </div>
+        </div>
 
 
-    <div class="row">
-      <div class="col-md-12">
+
+    <div class="row spacer-top-lg">
+      <div class="col-md-6">
         <ul isotope-container="isotope-container">
         <li ng-repeat="x in iso.xList" isotope-item="isotope-item" class="kindling {{x.class}}">
             <div class="symbol">{{x.name}}</div>
@@ -54,6 +69,8 @@
           </ul>
       </div>
     </div>
+
+    <button class="btn btn-danger" ng-click="$emit('iso-method', {name:'shuffle', params:null})">Shuffle</button>
 
 
   </div>
