@@ -80,6 +80,9 @@
             "label": "Hamburger Menu",
             "value": "hamburger.overview"
           }, {
+            "label": "Isotope",
+            "value": "patterns.isotope"
+          }, {
             "label": "Sign In & Sign Up",
             "value": "patterns.signinup"
           }, {

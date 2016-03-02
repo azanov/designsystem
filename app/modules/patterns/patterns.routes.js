@@ -27,6 +27,17 @@
       }
     })
 
+    .state('patterns.isotope', {
+      url: '/isotope',
+      templateUrl: 'modules/patterns/templates/isotope.html',
+      controller: 'IsotopeController as iso',
+      data: {
+        pageTitle: 'Patterns - Isotope',
+        access: 'public',
+        bodyClass: 'isotope'
+      }
+    })
+
     .state('patterns.welcome', {
       url: '/welcome',
       templateUrl: 'modules/patterns/templates/welcome-landing.html',
