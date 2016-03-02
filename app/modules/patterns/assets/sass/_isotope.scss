@@ -1,0 +1,339 @@
+/* scss-lint:disable MergeableSelector*/
+
+/* Start: Recommended Isotope styles */
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope, .isotope .isotope-item {
+  transition-duration: .8s;
+}
+
+.isotope {
+  transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  transition-property: transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition {
+  transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+
+/**** Isotope styles ****/
+
+/* required for containers to inherit vertical size from window */
+// html, body {
+//   height: 100%;
+// }
+
+#container {
+  border: 1px solid #666;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.element {
+  width: 110px;
+  height: 110px;
+  margin: 5px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  background: #888;
+  color: #222;
+  border-top-right-radius: 1.2em;
+
+  &.alkali {
+    background: hsl(0, 100%, 50%);
+  }
+  &.alkaline-earth {
+    background: hsl(36, 100%, 50%);
+  }
+  &.lanthanoid {
+    background: hsl(72, 100%, 50%);
+  }
+  &.actinoid {
+    background: hsl(108, 100%, 50%);
+  }
+  &.transition {
+    background: hsl(144, 100%, 50%);
+  }
+  &.post-transition {
+    background: hsl(180, 100%, 50%);
+  }
+  &.metalloid {
+    background: hsl(216, 100%, 50%);
+  }
+  &.other.nonmetal {
+    background: hsl(252, 100%, 50%);
+  }
+  &.halogen {
+    background: hsl(288, 100%, 50%);
+  }
+  &.noble-gas {
+    background: hsl(324, 100%, 50%);
+  }
+}
+
+.element * {
+  position: absolute;
+  margin: 0;
+}
+
+.element .symbol {
+  left: .2em;
+  top: .4em;
+  font-size: 3.8em;
+  line-height: 1em;
+  color: #fff;
+}
+.element.large .symbol {
+  font-size: 4.5em;
+}
+
+.element.fake .symbol {
+  color: #000;
+}
+
+.element .name {
+  left: .5em;
+  bottom: 1.6em;
+  font-size: 1.05em;
+}
+
+.element .weight {
+  font-size: .9em;
+  left: .5em;
+  bottom: .5em;
+}
+
+.element .number {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: hsla(0, 0%, 0%, .5);
+  right: .5em;
+  top: .5em;
+}
+
+.variable-sizes .element.width2 {
+  width: 230px;
+}
+
+.variable-sizes .element.height2 {
+  height: 230px;
+}
+
+.variable-sizes .element.width2.height2 {
+  font-size: 2em;
+}
+
+.element.large, .variable-sizes .element.large, .variable-sizes .element.large.width2.height2 {
+  font-size: 3em;
+  width: 350px;
+  height: 350px;
+  z-index: 100;
+}
+
+.clickable .element:hover {
+  cursor: pointer;
+}
+
+.clickable .element:hover h3 {
+  text-shadow: 0 0 10px #fff, 0 0 10px #fff;
+}
+
+.clickable .element:hover h2 {
+  color: #fff;
+}
+
+
+
+
+.kindling {
+  width: 110px;
+  height: 110px;
+  margin: 5px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  background: #888;
+  color: #222;
+  border-top-right-radius: 1.2em;
+}
+
+.kindling.alkali {
+  background: #f00;
+}
+
+.kindling.alkaline-earth {
+  background: #f90;
+}
+
+.kindling.lanthanoid {
+  background: #cf0;
+}
+
+.kindling.actinoid {
+  background: #3f0;
+}
+
+.kindling.transition {
+  background: #0f6;
+}
+
+.kindling.post-transition {
+  background: #0ff;
+}
+
+.kindling.metalloid {
+  background: #06f;
+}
+
+.kindling.other.nonmetal {
+  background: #30f;
+}
+
+.kindling.halogen {
+  background: #c0f;
+}
+
+.kindling.noble-gas {
+  background: #f09;
+}
+
+.kindling.purple {
+  background: #c0f;
+}
+
+.kindling.orange {
+  background: #f90;
+}
+
+.kindling.blue {
+  background: #09f;
+}
+
+.kindling.green {
+  background: #cf0;
+}
+
+.kindling * {
+  position: absolute;
+  margin: 0;
+}
+
+.kindling .symbol {
+  left: .2em;
+  top: .4em;
+  font-size: 3.8em;
+  line-height: 1em;
+  color: #fff;
+}
+
+.kindling.large .symbol {
+  font-size: 4.5em;
+}
+
+.kindling.fake .symbol {
+  color: #000;
+}
+
+.kindling .name {
+  left: .5em;
+  bottom: 1.6em;
+  font-size: 1.05em;
+}
+
+.kindling .weight {
+  font-size: .9em;
+  left: .5em;
+  bottom: .5em;
+}
+
+.kindling .number {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: rgba(0, 0, 0, .5);
+  right: .5em;
+  top: .5em;
+}
+
+.variable-sizes .kindling.width2 {
+  width: 230px;
+}
+
+.variable-sizes .kindling.height2 {
+  height: 230px;
+}
+
+.variable-sizes .kindling.width2.height2 {
+  font-size: 2em;
+}
+
+.kindling.large, .variable-sizes .kindling.large, .variable-sizes .kindling.large.width2.height2 {
+  font-size: 3em;
+  width: 350px;
+  height: 350px;
+  z-index: 100;
+}
+
+.clickable .kindling:hover {
+  cursor: pointer;
+}
+
+.clickable .kindling:hover h3 {
+  text-shadow: 0 0 10px #fff, 0 0 10px #fff;
+}
+
+.clickable .kindling:hover h2 {
+  color: #fff;
+}
+
+/* Color shapes */
+
+.color-shape {
+  width: 70px;
+  height: 70px;
+  margin: 5px;
+  float: left;
+}
+
+.color-shape.round {
+  border-radius: 35px;
+}
+
+.color-shape.big.round {
+  border-radius: 75px;
+}
+
+.color-shape.red { background: #f00; }
+.color-shape.blue { background: #00f; }
+.color-shape.yellow { background: #ff0; }
+
+.color-shape.wide, .color-shape.big { width: 150px; }
+.color-shape.tall, .color-shape.big { height: 150px; }
+
+.color-shape a {
+  display: block;
+  height: 100%;
+}
+
+.color-shape a:hover {
+  background: hsla(0, 0%, 100%, 0.5);
+}
