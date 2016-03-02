@@ -66,20 +66,23 @@
 * Several libraries have been updated in `bower.json`
 
 ####Updated Libraries
-* angular-chart.js (0.8.8)
-* highlightjs (9.1.0)
-* angular-daterangepicker (0.2.2)
-* browser-sync 2.10.1
-* angular-loading-bar (0.8.0)
-* angular-utils-pagination (0.10.0)
-* angular-bootstrap (1.1.1)
+
+For version numbers, please see `bower.json` and `package.json`
+
+* angular-chart.js
+* highlightjs
+* angular-daterangepicker
+* browser-sync
+* angular-loading-bar
+* angular-utils-pagination
+* angular-bootstrap
 * angular 1.4.9
-* angular-translate-storage-cookie 2.9.0
-* angular-translate-loader-partial 2.9.0
-* angular-translate-storage-local 2.9.0
-* angular-dynamic-locale 1.3.0
-* angular-ui-select 0.14.1
-* angular-toaster 1.7.0
+* angular-translate-storage-cookie
+* angular-translate-loader-partial
+* angular-translate-storage-local
+* angular-dynamic-locale
+* angular-ui-select
+* angular-toaster
 
 #### Other Tools
 - updated Sketch UI Kit to 2.5.0, see [Resources > Tools](http://guxstaging.pbi.global.pvt/design_system/#/resources/tools)

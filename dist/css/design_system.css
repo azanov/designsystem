@@ -1,8 +1,8 @@
 /**
  * DesignSystem - 
- * @version v2.5.1
+ * @version v2.5.3
  * @link http://guxstaging.pbi.global.pvt/design_system
- * Built Wed Mar 02 2016 11:24:50 GMT-0500 (EST) 
+ * Built Wed Mar 02 2016 15:31:14 GMT-0500 (EST) 
  */
 @charset "UTF-8";
 .container-fluid {
@@ -5521,6 +5521,85 @@ td.centered, th.centered {
   background-color: #eaedf8; }
 .leftnav-tree .nav-list .tree li a:active, .leftnav-tree .nav-list .tree li a.active {
   background-color: #c5cbe3; }
+
+.menu .menu-heading {
+  white-space: nowrap;
+  padding: 5px 3px;
+  color: #717171;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  position: relative; }
+.menu .menu-heading:hover {
+  background-color: transparent;
+  transition: all .3s;
+  color: #3e53a4; }
+.menu .menu-heading i.fa {
+  margin-right: 10px; }
+.menu .menu-content {
+  display: none; }
+.menu .menu-content li {
+  white-space: nowrap; }
+.menu .menu-content li:hover {
+  background: #f8f8f8;
+  color: #3e53a4; }
+.menu .menu-content li a {
+  color: #717171;
+  text-decoration: none;
+  padding-left: 41px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: block;
+  cursor: pointer; }
+.menu .menu-content li a:hover {
+  color: #3e53a4; }
+.menu .menu-content li a.active {
+  color: #3e53a4; }
+.menu .menu-collapse {
+  cursor: default;
+  padding-left: 3px; }
+.menu .menu-collapse i.fa {
+  cursor: pointer;
+  transition: all .3s; }
+.menu .menu-collapse i.fa:hover {
+  transition: all .3s;
+  color: #3e53a4; }
+.menu .menu-collapse i.fa:before {
+  content: '\f0a8'; }
+.menu > li.open .menu-heading i {
+  transition: all .3s;
+  color: #3e53a4; }
+.menu > li.open .menu-heading .menu-title {
+  transition: all .3s;
+  color: #3e53a4; }
+.menu > li.open .menu-heading b {
+  transition: all .3s;
+  color: #3e53a4; }
+
+.minified .menu > li:hover .menu-heading {
+  transition: none;
+  background-color: #f8f8f8;
+  width: 200px; }
+.minified .menu > li:hover .menu-title {
+  display: inline-block !important;
+  background-color: #f8f8f8;
+  font-weight: 700; }
+.minified .menu > li:hover .menu-content {
+  transition: all .3s;
+  background-color: #f8f8f8;
+  position: absolute;
+  width: 165px;
+  left: 45px;
+  display: block !important; }
+.minified .menu > li:hover .menu-content li a {
+  padding: 5px; }
+.minified .menu .menu-collapse i.fa {
+  transition: all .3s;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.no-csstransforms .minified .menu .menu-collapse i.fa:before {
+  content: '\f0a9'; }
 
 .splitview h1 {
   margin-top: 0; }
