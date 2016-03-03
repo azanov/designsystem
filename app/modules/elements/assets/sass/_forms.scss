@@ -53,8 +53,10 @@ label {
     color: $brand-danger;
 }
 
-
-
+// handle errors displayed under input-box in a form.
+.has-error .help-block{
+   color: $brand-danger;
+}
 
 
 .read-only-data {
