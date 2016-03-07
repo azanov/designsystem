@@ -31,6 +31,11 @@
       url: '/isotope',
       templateUrl: 'modules/patterns/templates/isotope.html',
       controller: 'IsotopeController as iso',
+      resolve: {
+        MockData: function(MockDataFactory) {
+          return MockDataFactory.query({filename:'data'});
+        }
+      },
       data: {
         pageTitle: 'Patterns - Isotope',
         access: 'public',

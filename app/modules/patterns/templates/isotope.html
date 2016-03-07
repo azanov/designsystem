@@ -28,49 +28,68 @@
 
 
 <div class="container">
+  <div class="row spacer-top-lg">
+    <div class="col-md-12">
+      <h1 class="">Demo Portal</h1>
 
-  <div class="row">
-    <div class="col-md-8">
-      <h1 class="doc-head" id="styles">Styles</h1>
+      <div class="btn-group btn-group-justified" opt-kind="filter" ok-key="filter">
+        <div class="btn-group">
+          <button type="button" class="btn btn-default active" ok-sel="*">Show All</button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default" ok-sel=".platform">Platform</button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default" ok-sel=".smb">SMB</button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default" ok-sel=".ecommerce">Ecommerce</button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default" ok-sel=".presort">Presort</button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default" ok-sel=".geoenrichment">Geo Enrichment</button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default" ok-sel=".customers">Customers</button>
+        </div>
+      </div>
+
     </div>
-  </div>
+    </div>
 
-  <div class="row">
-          <div class="col-md-12">
-            <h4>Selector-Based Filter</h4>
-            <div class="btn-group" opt-kind="" ok-key="filter">
-              <button type="button" class="btn btn-default active" ok-sel="*">Show All</button>
-              <button type="button" class="btn btn-default" ok-sel=".purple">Purple</button>
-              <button type="button" class="btn btn-default" ok-sel=".orange">Orange</button>
-              <button type="button" class="btn btn-default" ok-sel=".blue">Blue</button>
-              <button type="button" class="btn btn-default" ok-sel=".green">Green</button>
-              <button type="button" class="btn btn-default" ok-sel=":not(.blue)">Not Blue</button>
-              <button type="button" class="btn btn-default" ok-sel="#extra">Extra Only</button>
+
+    <div class="row spacer-top-md">
+      <div isotope-container="isotope-container">
+
+        <div class="col-xs-12 col-sm-4 col-md-3 {{x.category}}" ng-repeat="x in iso.data" isotope-item="isotope-item">
+          <div class="panel panel-default category-widget">
+            <div class="panel-body category-widget-icon">
+              <a href="" ng-click="iso.openItem(x)">
+                <img class="img-responsive" ng-src="assets/images/thumbnail.png" alt="" />
+              </a>
+            </div>
+            <div class="panel-footer">
+              <h4 class="category-widget-title">
+                <a href="" ng-click="iso.openItem(x)">{{x.name}}</a> <i class="fa fa-question-circle text-gray-300" uib-tooltip="{{x.description}}" tooltip-placement="right" tooltip-append-to-body="true"></i>
+              </h4>
+              <p class="category-widget-description">
+                Username: {{x.username}}<br />
+                Password: {{x.password}}
+              </p>
+              <p>
+
+              </p>
             </div>
           </div>
         </div>
+        </div>
 
-
-
-    <div class="row spacer-top-lg">
-      <div class="col-md-6">
-        <ul isotope-container="isotope-container">
-        <li ng-repeat="x in iso.xList" isotope-item="isotope-item" class="kindling {{x.class}}">
-            <div class="symbol">{{x.name}}</div>
-            <div class="weight" date="{{x.date}}">{{x.date|date}}</div>
-            <div class="number" number="{{x.number}}">{{x.number}}</div>
-        </li>
-
-        <!-- <li id="extra" isotope-item="" class="kindling green">
-           <div class="symbol">extra</div>
-           <div class="weight" date="1360313309421">{{'1360313309421' | date}}</div>
-           <div class="number" number="20">Twenty</div>
-        </li> -->
-          </ul>
       </div>
-    </div>
-
-    <button class="btn btn-danger" ng-click="$emit('iso-method', {name:'shuffle', params:null})">Shuffle</button>
 
 
-  </div>
+
+
+
+</div>

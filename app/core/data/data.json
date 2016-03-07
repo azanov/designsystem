@@ -1,0 +1,107 @@
+[{
+  "name": "Data Hub",
+  "category": "platform",
+  "url": "http://www.google.com",
+  "username": "user@name.com",
+  "password": "p@55w0rd",
+  "description": "Lorem ipsum dolor sit amet consectatur adaptec ilipsing."
+}, {
+  "name": "Data Portal",
+  "category": "platform",
+  "url": "http://www.google.com",
+  "username": "user@name.com",
+  "password": "p@55w0rd",
+  "description": "Lorem ipsum dolor sit amet consectatur adaptec ilipsing."
+}, {
+  "name": "Geo Libraries",
+  "category": "platform",
+  "url": "http://www.google.com",
+  "username": "user@name.com",
+  "password": "p@55w0rd",
+  "description": "Lorem ipsum dolor sit amet consectatur adaptec ilipsing."
+}, {
+  "name": "Insights Report",
+  "category": "smb",
+  "url": "http://www.google.com",
+  "username": "user@name.com",
+  "password": "p@55w0rd",
+  "description": "Lorem ipsum dolor sit amet consectatur adaptec ilipsing."
+}, {
+  "name": "SmartLink",
+  "category": "smb",
+  "url": "http://portal-dev-pdx.iot.pitneycloud.com/smartlink",
+  "username": "smartlink4@demo.com",
+  "password": "Password1@",
+  "description": "Lorem ipsum dolor sit amet consectatur adaptec ilipsing."
+}, {
+  "name": "Sales Assist",
+  "category": "smb",
+  "url": "http://www.google.com",
+  "username": "user@name.com",
+  "password": "p@55w0rd",
+  "description": "Lorem ipsum dolor sit amet consectatur adaptec ilipsing."
+}, {
+  "name": "SMB Health Scoring",
+  "category": "smb",
+  "url": "http://www.google.com",
+  "username": "user@name.com",
+  "password": "p@55w0rd",
+  "description": "Lorem ipsum dolor sit amet consectatur adaptec ilipsing."
+}, {
+  "name": "Dashboards",
+  "category": "ecommerce",
+  "url": "http://www.google.com",
+  "username": "user@name.com",
+  "password": "p@55w0rd",
+  "description": "Lorem ipsum dolor sit amet consectatur adaptec ilipsing."
+}, {
+  "name": "Borderfree",
+  "category": "ecommerce",
+  "url": "http://www.google.com",
+  "username": "user@name.com",
+  "password": "p@55w0rd",
+  "description": "Lorem ipsum dolor sit amet consectatur adaptec ilipsing.",
+  "description": "Lorem ipsum dolor sit amet consectatur adaptec ilipsing."
+}, {
+  "name": "Advanced Search",
+  "category": "ecommerce",
+  "url": "http://www.google.com",
+  "username": "user@name.com",
+  "password": "p@55w0rd",
+  "description": "Lorem ipsum dolor sit amet consectatur adaptec ilipsing."
+}, {
+  "name": "Mail Intelligence",
+  "category": "presort",
+  "url": "http://www.google.com",
+  "username": "user@name.com",
+  "password": "p@55w0rd",
+  "description": "Lorem ipsum dolor sit amet consectatur adaptec ilipsing."
+}, {
+  "name": "Fire Protection",
+  "category": "geoenrichment",
+  "url": "http://www.google.com",
+  "username": "user@name.com",
+  "password": "p@55w0rd",
+  "description": "Lorem ipsum dolor sit amet consectatur adaptec ilipsing."
+}, {
+  "name": "Mastercard",
+  "category": "geoenrichment",
+  "url": "http://www.google.com",
+  "username": "user@name.com",
+  "password": "p@55w0rd",
+  "description": "Lorem ipsum dolor sit amet consectatur adaptec ilipsing."
+}, {
+  "name": "D&B",
+  "category": "geoenrichment",
+  "url": "http://www.google.com",
+  "username": "user@name.com",
+  "password": "p@55w0rd",
+  "description": "Lorem ipsum dolor sit amet consectatur adaptec ilipsing."
+}, {
+  "name": "Cigna",
+  "category": "customers",
+  "url": "http://www.google.com",
+  "username": "user@name.com",
+  "password": "p@55w0rd",
+  "description": "Lorem ipsum dolor sit amet consectatur adaptec ilipsing."
+}]
