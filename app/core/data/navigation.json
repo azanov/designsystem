@@ -16,93 +16,90 @@
           "value": "",
           "toggle": "dropdown",
           "children": [{
-              "label": "Color",
-              "value": "foundation.color"
-            }, {
               "label": "Accessibility",
               "value": "foundation.accessibility"
             }, {
-              "label": "Typography",
-              "value": "foundation.typography"
+              "label": "Animation",
+              "value": "foundation.animation.page"
+            }, {
+              "label": "Color",
+              "value": "foundation.color"
             }, {
               "label": "Grid",
               "value": "foundation.grid"
             }, {
+              "label": "Helpers",
+              "value": "helpers"
+            }, {
               "label": "Iconography",
               "value": "foundation.iconography"
             }, {
-              "label": "Helpers",
-              "value": "helpers"
-            },
-            {
-              "label": "Animation",
-              "value": "foundation.animation.page"
+              "label": "Typography",
+              "value": "foundation.typography"
             }
+
           ]
         }, {
           "label": "Elements",
           "value": "",
           "toggle": "dropdown",
           "children": [{
-            "label": "UI Controls",
-            "value": "elements.uicontrols"
-          }, {
             "label": "Buttons",
             "value": "elements.buttons"
           }, {
+            "label": "Charts",
+            "value": "graphs.page"
+          }, {
             "label": "Containers",
             "value": "elements.containers.page"
+          }, {
+            "label": "Help Prompts",
+            "value": "help"
           }, {
             "label": "Modals & Popovers",
             "value": "elements.popovers",
             "className": "popovers"
           }, {
-            "label": "User Feedback",
-            "value": "feedback.page"
-          }, {
-            "label": "Help Prompts",
-            "value": "help"
-          }, {
             "label": "Tables",
             "value": "tables.datatable.page"
           }, {
-            "label": "Charts",
-            "value": "graphs.page"
+            "label": "UI Controls",
+            "value": "elements.uicontrols"
+          }, {
+            "label": "User Feedback",
+            "value": "feedback.page"
           }]
         }, {
           "label": "Patterns",
           "value": "",
           "toggle": "dropdown",
           "children": [{
-            "label": "Headers & Footers",
-            "value": "patterns.headersfooters"
-          }, {
-            "label": "Hamburger Menu",
-            "value": "hamburger.overview"
-          }, {
-            "label": "Isotope",
-            "value": "patterns.isotope"
-          }, {
-            "label": "Sign In & Sign Up",
-            "value": "patterns.signinup"
-          }, {
             "label": "Dashboards",
             "value": "patterns.dashboards"
+          }, {
+            "label": "Error Pages",
+            "value": "patterns.errorpages"
+          }, {
+            "label": "Form Samples",
+            "value": "patterns.forms"
           }, {
             "label": "Getting Started",
             "value": "patterns.gettingstarted"
           }, {
-            "label": "Welcome",
-            "value": "patterns.welcome"
+            "label": "Hamburger Menu",
+            "value": "hamburger.overview"
+          }, {
+            "label": "Headers & Footers",
+            "value": "patterns.headersfooters"
+          }, {
+            "label": "Sign In & Sign Up",
+            "value": "patterns.signinup"
           }, {
             "label": "Split Views",
             "value": "splitview.overview"
           }, {
-           "label": "Page Errors",
-           "value": "patterns.errorpages"
-         }, {
-            "label": "Form Samples",
-            "value": "patterns.forms"
+            "label": "Welcome",
+            "value": "patterns.welcome"
           }]
         }]
       }]
@@ -121,48 +118,45 @@
           "value": "",
           "toggle": "dropdown",
           "children": [{
-              "label": "Color",
-              "value": "mobile.color"
-            }, {
-              "label": "Typography",
-              "value": "mobile.typography"
-            }, {
-              "label": "Grid",
-              "value": "mobile.grid"
-            }]
+            "label": "Color",
+            "value": "mobile.color"
+          }, {
+            "label": "Grid",
+            "value": "mobile.grid"
+          }, {
+            "label": "Typography",
+            "value": "mobile.typography"
+          }]
         }, {
           "label": "Elements",
           "value": "",
           "toggle": "dropdown",
-          "children": [ {
-            "label": "UI Controls",
-            "value": "mobile.uicontrols"
-          },{
+          "children": [{
+            "label": "Alerts",
+            "value": "mobile.user-feedback"
+          }, {
             "label": "Buttons",
             "value": "mobile.buttons"
           }, {
             "label": "Containers",
             "value": "mobile.containers"
           }, {
-            "label": "Modals & Popovers",
-            "value": "mobile.modals-popovers"
-          }, {
             "label": "Lists",
             "value": "mobile.lists-grids"
           }, {
-            "label": "Alerts",
-            "value": "mobile.user-feedback"
+            "label": "Modals & Popovers",
+            "value": "mobile.modals-popovers"
+          }, {
+            "label": "UI Controls",
+            "value": "mobile.uicontrols"
           }]
         }, {
           "label": "Patterns",
           "value": "",
           "toggle": "dropdown",
           "children": [{
-            "label": "Navigation",
-            "value": "mobile.navigation"
-          }, {
-            "label": "Sign In & Sign Up",
-            "value": "mobile.sign-in-up"
+            "label": "Forms",
+            "value": "mobile.forms"
           }, {
             "label": "Getting Started",
             "value": "mobile.onboarding"
@@ -170,17 +164,20 @@
             "label": "Home Page",
             "value": "mobile.homepage"
           }, {
+            "label": "Maps",
+            "value": "mobile.maps"
+          }, {
+            "label": "Navigation",
+            "value": "mobile.navigation"
+          }, {
             "label": "Search & Results",
             "value": "mobile.search-results"
           }, {
+            "label": "Sign In & Sign Up",
+            "value": "mobile.sign-in-up"
+          }, {
             "label": "Welcome",
             "value": "mobile.landing"
-          }, {
-            "label": "Forms",
-            "value": "mobile.forms"
-          }, {
-            "label": "Maps",
-            "value": "mobile.maps"
           }]
         }]
       }]
