@@ -14,10 +14,10 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <!-- <ul class="list-unstyled list-inline jump-menu">
+          <ul class="list-unstyled list-inline jump-menu">
             <li><a ui-sref="hamburger.overview({'#':'styles'})">Styles</a></li>
             <li><a ui-sref="hamburger.overview({'#':'types'})">Types</a></li>
-          </ul> -->
+          </ul>
         </div>
       </div>
     </div>
@@ -29,18 +29,18 @@
 
 <div class="container">
 
+    <div class="row spacer-top-lg">
+      <div class="col-md-12">
+        <h1 class="page-title">Demo Portal</h1>
+
+      </div>
+    </div>
+
+
+
   <div class="row spacer-top-lg">
     <div class="col-md-12">
-            <h1 class="page-title">Demo Portal</h1>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6">
-
-
-      <label>Category</label>&nbsp;
-
-
+      <label>Filter</label>&nbsp;
       <div class="btn-group" opt-kind="filter" ok-key="filter">
         <div class="btn-group">
           <button type="button" class="btn btn-default active" ok-sel="*">Show All</button>
@@ -57,47 +57,22 @@
         <div class="btn-group">
           <button type="button" class="btn btn-default" ok-sel=".presort">Presort</button>
         </div>
-        <!-- <div class="btn-group">
+        <div class="btn-group">
           <button type="button" class="btn btn-default" ok-sel=".geoenrichment">Geo Enrichment</button>
         </div>
         <div class="btn-group">
           <button type="button" class="btn btn-default" ok-sel=".customers">Customers</button>
-        </div> -->
+        </div>
       </div>
 
     </div>
-
-    <div class="col-md-6">
-
-      <label>Release Date</label>&nbsp;
-
-      <div class="btn-group" opt-kind="filter" ok-key="filter">
-        <div class="btn-group">
-          <button type="button" class="btn btn-default active" ok-sel="*">Show All</button>
-        </div>
-        <div class="btn-group">
-          <button type="button" class="btn btn-default" ok-sel=".Q1">Q1</button>
-        </div>
-        <div class="btn-group">
-          <button type="button" class="btn btn-default" ok-sel=".Q2">Q2</button>
-        </div>
-        <div class="btn-group">
-          <button type="button" class="btn btn-default" ok-sel=".Q3">Q3</button>
-        </div>
-        <div class="btn-group">
-          <button type="button" class="btn btn-default" ok-sel=".Q4">Q4</button>
-        </div>
-
-      </div>
-
-      </div>
     </div>
 
 
     <div class="row spacer-top-md">
       <div isotope-container="isotope-container">
 
-        <div class="col-xs-12 col-sm-4 col-md-3 {{x.category}} {{x.releasedate}}" ng-repeat="x in iso.data" isotope-item="isotope-item">
+        <div class="col-xs-12 col-sm-4 col-md-3 {{x.category}}" ng-repeat="x in iso.data" isotope-item="isotope-item">
           <div class="panel panel-default category-widget">
             <div class="panel-body category-widget-icon">
               <a href="" ng-click="iso.openItem(x)">
@@ -109,7 +84,8 @@
                 <a href="" ng-click="iso.openItem(x)">{{x.name}}</a> <i class="fa fa-question-circle text-gray-300" uib-tooltip="{{x.description}}" tooltip-placement="right" tooltip-append-to-body="true"></i>
               </h4>
               <p class="category-widget-description">
-                Username: {{x.username}}<br />
+                Release Date: {{x.date|date}}<br>
+                Username: {{x.username}}<br>
                 Password: {{x.password}}
               </p>
               <p>
