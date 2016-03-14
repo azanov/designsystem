@@ -39,64 +39,57 @@
 
 
   <div class="row spacer-top-lg">
-    <div class="col-md-12">
-      <label>Filter</label>&nbsp;
-      <div class="btn-group" opt-kind="filter" ok-key="filter">
-        <div class="btn-group">
-          <button type="button" class="btn btn-default active" ok-sel="*">Show All</button>
+      <div class="col-md-7">
+        <label>Filter</label>&nbsp;
+        <div class="btn-group" opt-kind="filter" ok-key="filter">
+            <button type="button" class="btn btn-default active" ok-sel="*">Show All</button>
+            <button type="button" class="btn btn-default" ok-sel=".platform">Platform</button>
+            <button type="button" class="btn btn-default" ok-sel=".smb">SMB</button>
+            <button type="button" class="btn btn-default" ok-sel=".ecommerce">Ecommerce</button>
+            <button type="button" class="btn btn-default" ok-sel=".presort">Presort</button>
+            <!-- <button type="button" class="btn btn-default" ok-sel=".geoenrichment">Geo Enrichment</button>-->
+            <!-- <button type="button" class="btn btn-default" ok-sel=".customers">Customers</button>  -->
         </div>
-        <div class="btn-group">
-          <button type="button" class="btn btn-default" ok-sel=".platform">Platform</button>
-        </div>
-        <div class="btn-group">
-          <button type="button" class="btn btn-default" ok-sel=".smb">SMB</button>
-        </div>
-        <div class="btn-group">
-          <button type="button" class="btn btn-default" ok-sel=".ecommerce">Ecommerce</button>
-        </div>
-        <div class="btn-group">
-          <button type="button" class="btn btn-default" ok-sel=".presort">Presort</button>
-        </div>
-        <div class="btn-group">
-          <button type="button" class="btn btn-default" ok-sel=".geoenrichment">Geo Enrichment</button>
-        </div>
-        <div class="btn-group">
-          <button type="button" class="btn btn-default" ok-sel=".customers">Customers</button>
-        </div>
+
       </div>
+      <div class="col-md-5">
+        <!-- <label>Sort By</label>&nbsp; -->
+        <div class="btn-group" opt-kind="sortBy" ok-key="sortBy">
+           <!-- <button type="button" class="btn btn-default" ok-sel="">Name</button> -->
+           <!-- <button type="button" class="btn btn-default" ok-sel="[date]" ok-type="integer">Date</button> -->
 
-    </div>
-    </div>
+          <!-- adding the "ok-sel" attribute above makes the whole thing die. -->
+
+        </div>
+
+      </div>
+  </div>
 
 
-    <div class="row spacer-top-md">
-      <div isotope-container="isotope-container">
 
-        <div class="col-xs-12 col-sm-4 col-md-3 {{x.category}}" ng-repeat="x in iso.data" isotope-item="isotope-item">
-          <div class="panel panel-default category-widget">
-            <div class="panel-body category-widget-icon">
-              <a href="" ng-click="iso.openItem(x)">
-                <img class="img-responsive" ng-src="assets/images/thumbnail.png" alt="" />
-              </a>
-            </div>
-            <div class="panel-footer">
-              <h4 class="category-widget-title">
-                <a href="" ng-click="iso.openItem(x)">{{x.name}}</a> <i class="fa fa-question-circle text-gray-300" uib-tooltip="{{x.description}}" tooltip-placement="right" tooltip-append-to-body="true"></i>
-              </h4>
-              <p class="category-widget-description">
-                Release Date: {{x.date|date}}<br>
-                Username: {{x.username}}<br>
-                Password: {{x.password}}
-              </p>
-              <p>
+      <div isotope-container="isotope-container" class="spacer-top-xl">
 
-              </p>
+          <div ng-repeat="x in iso.data" isotope-item="isotope-item" class="element {{x.category}}">
+            <div class="panel panel-default category-widget" >
+              <div class="panel-body category-widget-icon">
+                <a href="" ng-click="iso.openItem(x)">
+                  <img class="img-responsive" ng-src="assets/images/thumbnail.png" alt="" />
+                </a>
+              </div>
+              <div class="panel-footer">
+                <h4 class="category-widget-title">
+                  <a href="" ng-click="iso.openItem(x)">{{x.name}}</a> <i class="fa fa-question-circle text-gray-300" uib-tooltip="{{x.description}}" tooltip-placement="right" tooltip-append-to-body="true"></i>
+                </h4>
+                <div class="category-widget-description">
+                  <div class="date" date="{{x.date}}">Release Date: {{x.date|date}}</div>
+                  <div class="username">Username: {{x.username}}<br></div>
+                  <div class="password">Password: {{x.password}}</div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        </div>
 
-      </div>
+     </div>
 
 
 
