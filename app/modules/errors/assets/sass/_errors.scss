@@ -1,0 +1,54 @@
+.errors {
+  .main {
+    margin-top: 200px;
+  }
+  .site-content {
+    min-height: calc(100vh - (50px + 35px)); //HACK: why is this different?
+  }
+
+  &.errors-centered {
+    .main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        margin-bottom: 0;
+      }
+    }
+    .search-field {
+      width: 500px;
+      .input-group {
+        margin-bottom: 15px;
+      }
+    }
+    .text {
+      display: flex;
+      h2 {
+        // margin-top: 10px;
+      }
+      > div {
+        margin: 0 20px;
+      }
+    }
+    @include breakpoint(screen-xs) {
+      .main {
+        margin-top: 80px;
+        h1 {
+          text-align: center;
+        }
+      }
+      .search-field {
+        width: auto;
+      }
+
+      .text {
+        flex-direction: column;
+        h2 {
+          margin-top: 20px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}

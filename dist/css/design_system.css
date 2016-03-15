@@ -1549,22 +1549,34 @@ div.accordion-group .panel.active .panel-title:before {
   background-color: #cf0989; }
 
 .badge-gray-text {
-  background-color: #717171 !important; }
+  background-color: #717171; }
+.badge-gray-text:hover {
+  background-color: #585858; }
 
 .badge-gray-dark {
-  background-color: #2e2e2e !important; }
+  background-color: #2e2e2e; }
+.badge-gray-dark:hover {
+  background-color: #151515; }
 
 .badge-brand-success {
-  background-color: #008500 !important; }
+  background-color: #008500; }
+.badge-brand-success:hover {
+  background-color: #005200; }
 
 .badge-brand-info {
-  background-color: #3e53a4 !important; }
+  background-color: #3e53a4; }
+.badge-brand-info:hover {
+  background-color: #30407f; }
 
 .badge-brand-warning {
-  background-color: #be5000 !important; }
+  background-color: #be5000; }
+.badge-brand-warning:hover {
+  background-color: #8b3b00; }
 
 .badge-brand-danger {
-  background-color: #dc0000 !important; }
+  background-color: #dc0000; }
+.badge-brand-danger:hover {
+  background-color: #a90000; }
 
 .badge-link {
   background-color: #e1e1e1;
@@ -2192,6 +2204,17 @@ select:hover {
 
 .controls-inline .control + .control {
   margin-left: 15px; }
+
+.search-clear {
+  position: absolute;
+  padding-right: 3px;
+  padding-left: 0;
+  right: 0;
+  z-index: 4;
+  border: 0;
+  opacity: 1;
+  color: silver;
+  transition: all .3s ease-in-out; }
 
 a.list-group-item {
   font-family: "PrecisionSans_W_Rg", "Helvetica Neue", Arial, sans-serif;
@@ -4901,6 +4924,17 @@ td.centered, th.centered {
   background-color: #3e53a4;
   color: #fff; }
 
+.list-group-divided .list-group-item {
+  border-radius: 0;
+  border: 0;
+  border-top: 1px solid #e1e1e1;
+  padding: 5px 10px 5px 0; }
+.list-group-divided .list-group-item .list-group-item-heading {
+  display: block;
+  text-decoration: none; }
+.list-group-divided .list-group-item .list-group-item-heading:hover {
+  background: none !important; }
+
 /**
 * A stylesheet for use with Bootstrap 3.x
 * @author: Dan Grossman http://www.dangrossman.info/
@@ -5530,6 +5564,30 @@ td.centered, th.centered {
 .leftnav-sectioned .list-group-section a.list-group-item:active, .splitview .two-col-wrapper .leftnav a:active, .leftnav-sectioned .list-group-section a.active.list-group-item, .splitview .two-col-wrapper .leftnav a.active {
   background-color: #c5cbe3;
   color: #2e2e2e; }
+.leftnav-sectioned .list-group-section a.badge.list-group-item, .splitview .two-col-wrapper .leftnav a.badge {
+  color: #fff;
+  font-weight: normal;
+  font-size: 11px;
+  background-color: #cf0989; }
+.leftnav-sectioned .list-group-section a.badge.list-group-item:hover, .splitview .two-col-wrapper .leftnav a.badge:hover {
+  background-color: #9e0769; }
+
+.controls-stacked {
+  margin: 0 0 15px; }
+.controls-stacked .control {
+  margin-top: 0;
+  margin-bottom: 10px; }
+
+.reset-link {
+  font-weight: normal !important;
+  color: #0072b8 !important;
+  font-size: 12px !important; }
+
+.list-group-divided .list-group-item-heading {
+  padding: 10px 0;
+  font-weight: bold; }
+.list-group-divided .list-group-item-heading i {
+  padding-top: 5px; }
 
 .leftnav-sectioned .list-group-section:not(:first-child) {
   border-top: 1px solid #e8e8e8; }
@@ -5870,3 +5928,47 @@ body.hamburger.hamburger-slide[style='overflow: hidden;'] .burger-backdrop {
   background-color: #000;
   visibility: visible;
   opacity: .5; }
+
+.errors .main {
+  margin-top: 200px; }
+.errors .site-content {
+  min-height: calc(100vh - (50px + 35px)); }
+.errors.errors-centered .main {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+.errors.errors-centered .main h1 {
+  margin-bottom: 0; }
+.errors.errors-centered .search-field {
+  width: 500px; }
+.errors.errors-centered .search-field .input-group {
+  margin-bottom: 15px; }
+.errors.errors-centered .text {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+.errors.errors-centered .text > div {
+  margin: 0 20px; }
+@media (max-width: 767px) {
+  .errors.errors-centered .main {
+    margin-top: 80px; }
+  .errors.errors-centered .main h1 {
+    text-align: center; }
+  .errors.errors-centered .search-field {
+    width: auto; }
+  .errors.errors-centered .text {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .errors.errors-centered .text h2 {
+    margin-top: 20px;
+    margin-bottom: 5px; } }

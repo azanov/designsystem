@@ -20,7 +20,7 @@
 // "actual" footer is inside container
 // id kept for legacy reasons
 #footer, footer {
-  .container {
+  .container, .container-fluid {
     color: $text-color;
     font-size: 12px;
     font-family: $font-family-sans-serif;

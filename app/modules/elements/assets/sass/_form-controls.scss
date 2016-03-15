@@ -142,3 +142,16 @@
 .controls-inline .control + .control {
   margin-left: 15px;
 }
+
+// this was just for table toolbats, should really be global
+.search-clear {
+  position: absolute;
+  padding-right: 3px;
+  padding-left: 0;
+  right: 0;
+  z-index: 4;
+  border: 0;
+  opacity: 1;
+  color: silver;
+  transition: all .3s ease-in-out;
+}

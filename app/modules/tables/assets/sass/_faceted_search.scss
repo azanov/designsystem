@@ -1,0 +1,19 @@
+.list-group-divided {
+  
+  .list-group-item {
+    border-radius: 0;
+    border: 0;
+    border-top: 1px solid $pb-light-gray;
+    padding: 5px 10px 5px 0;
+    
+    .list-group-item-heading {
+      display: block;
+      text-decoration: none;
+      
+      &:hover {
+        background: none !important;
+      }
+    }
+  }
+  
+}

@@ -2,7 +2,7 @@
 
 .signin {
   background-color: #254d9d;
-  background-image: linear-gradient(90deg, #4c4ca2 0%, #872e96 40%, #872e96 45%, #c90d8b 100%);
+  @extend %gradient;
 
   .signin-wrapper {
     height: 100vh;

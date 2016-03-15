@@ -16,8 +16,6 @@
 
     _this.samplePeople = PeopleResolve;
 
-
-
     // controls the "add another row" functionality
     _this.choices1 = [{ id: 'choice1'}];
     _this.choices2 = [{ id: 'choice1', num: '222-555-3456' }];
@@ -36,6 +34,13 @@
     _this.showAddChoice = function(choice, arr) {
       return arr.length !== _this.maxChoices;
     };
+
+    // for the date picker with calendar button working
+    _this.openPicker = function (which) {
+      var item = '#' + which;
+     $(item).data('daterangepicker').show();
+    };
+
 
 
 

@@ -24,7 +24,8 @@
     'pb.ds.splitview',
     'pb.ds.help',
     'pb.ds.hamburger',
-    'pb.ds.content'
+    'pb.ds.content',
+    'pb.ds.errors'
   ]);
 
   //angular scroll configuration

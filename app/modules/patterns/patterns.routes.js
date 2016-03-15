@@ -270,7 +270,7 @@
     })
 
     .state('patterns.facetedsearch', {
-      url: '/patterns/facetedsearch',
+      url: '/facetedsearch',
       templateUrl: 'modules/patterns/templates/faceted-search.html'
     })
 
