@@ -1717,16 +1717,32 @@ div.accordion-group .panel.active .panel-title:before {
   opacity: 1; }
 
 .btn-success {
-  background-color: #008500; }
+  background-color: #008500;
+  border-color: #008500; }
+.btn-success:hover {
+  background-color: #005200;
+  border-color: #005200; }
 
 .btn-info {
-  background-color: #3e53a4; }
+  background-color: #3e53a4;
+  border-color: #3e53a4; }
+.btn-info:hover {
+  background-color: #30407f;
+  border-color: #30407f; }
 
 .btn-warning {
-  background-color: #be5000; }
+  background-color: #be5000;
+  border-color: #be5000; }
+.btn-warning:hover {
+  background-color: #8b3b00;
+  border-color: #8b3b00; }
 
 .btn-danger {
-  background-color: #dc0000; }
+  background-color: #dc0000;
+  border-color: #dc0000; }
+.btn-danger:hover {
+  background-color: #a90000;
+  border-color: #a90000; }
 
 .btn {
   padding: 6px 12px;
@@ -5571,8 +5587,8 @@ td.centered, th.centered {
   background-color: #cf0989; }
 .leftnav-sectioned .list-group-section a.badge.list-group-item:hover, .splitview .two-col-wrapper .leftnav a.badge:hover {
   background-color: #9e0769; }
-
 .controls-stacked {
+
   margin: 0 0 15px; }
 .controls-stacked .control {
   margin-top: 0;

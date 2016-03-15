@@ -259,6 +259,7 @@
 
 }
 
+// BS functional buttons
 .btn-success, .btn-info, .btn-warning, .btn-danger {
   &.disabled, &[disabled], fieldset[disabled] & {
     &,
@@ -276,17 +277,26 @@
   }
 }
 
+@mixin functional-button($color) {
+  background-color: $color;
+  border-color: $color;
+  &:hover {
+    background-color: darken($color, 10%);
+    border-color: darken($color, 10%);
+  }
+}
+
 .btn-success {
-  background-color: $brand-success;
+  @include functional-button($brand-success);
 }
 .btn-info {
-  background-color: $brand-info;
+  @include functional-button($brand-info);
 }
 .btn-warning {
-  background-color: $brand-warning;
+  @include functional-button($brand-warning);
 }
 .btn-danger {
-  background-color: $brand-danger;
+  @include functional-button($brand-danger);
 }
 
 
