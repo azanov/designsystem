@@ -15,6 +15,7 @@
       <div class="row">
         <div class="col-md-12">
           <ul class="list-unstyled list-inline jump-menu">
+            <li><a ui-sref="splitview.overview({'#':'usage'})">Usage</a></li>
             <li><a ui-sref="splitview.overview({'#':'styles'})">Styles</a></li>
             <li><a ui-sref="splitview.overview({'#':'types'})">Types</a></li>
           </ul>
@@ -31,17 +32,36 @@
 
   <div class="row">
     <div class="col-md-8">
+      <h1 class="doc-head" id="usage">Usage</h1>
+    </div>
+  </div>
+
+  <div class="row spacer-top-md">
+    <div class="col-md-6">
+      <p>Split views are useful for consolidating discrete collections of inputs or other content under a set of secondary navigational elements. If you’re considering using them in your product, keep in mind that split views:</p>
+
+      <ul>
+        <li>Are not responsive</li>
+        <li>Should be used for secondary navigation only</li>
+        <li>Will not persist, meaning they will disappear should the user navigate to another area</li>
+        <li>Aren’t meant for mobile development — they may work on some tablets but will not work on smartphones</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-8">
       <h1 class="doc-head" id="styles">Styles</h1>
     </div>
   </div>
 
 
-
-<div class="row spacer-top-md">
-  <div class="col-md-6">
-    <p>The various stypes of split views, all with a simple left navbar.</p>
+  <div class="row spacer-top-md">
+    <div class="col-md-6">
+      <p>You have a choice of five design variations for split views. Just make sure that the design you choose is consistent with the rest of your product’s visual design.</p>
+    </div>
   </div>
-</div>
 
 
   <div class="row spacer-top-lg">
@@ -83,6 +103,12 @@
   <div class="row">
     <div class="col-md-8">
       <h1 class="doc-head" id="types">Types</h1>
+    </div>
+  </div>
+
+  <div class="row spacer-top-md">
+    <div class="col-md-6">
+      <p>If your split view areas have sub-menu items, you can choose to display those in an “expanded” view (all sub-menu items visible by default, shown under their section heads) or in a “collapsed” view (all sub-menu items hidden by default, accessed via a “tree” behavior).</p>
     </div>
   </div>
 
