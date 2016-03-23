@@ -41,7 +41,7 @@
   <div class="row spacer-top-lg">
       <div class="col-md-7">
         <label>Filter</label>&nbsp;
-        <div class="btn-group" opt-kind="filter" ok-key="filter">
+        <div class="btn-group" opt-kind ok-key="filter">
             <button type="button" class="btn btn-default active" ok-sel="*">Show All</button>
             <button type="button" class="btn btn-default" ok-sel=".platform">Platform</button>
             <button type="button" class="btn btn-default" ok-sel=".smb">SMB</button>
@@ -53,13 +53,11 @@
 
       </div>
       <div class="col-md-5">
-        <!-- <label>Sort By</label>&nbsp; -->
-        <div class="btn-group" opt-kind="sortBy" ok-key="sortBy">
-           <!-- <button type="button" class="btn btn-default" ok-sel="">Name</button> -->
-           <!-- <button type="button" class="btn btn-default" ok-sel="[date]" ok-type="integer">Date</button> -->
-
-          <!-- adding the "ok-sel" attribute above makes the whole thing die. -->
-
+        <label>Sort By</label>&nbsp;
+        <div class="btn-group" opt-kind ok-key="sortBy">
+          <button type="button" class="btn btn-default" ok-sel=".name">Name</button>
+          <button type="button" class="btn btn-default" ok-sel="[number]" ok-type="integer">Number</button>
+          <button type="button" class="btn btn-default" ok-sel="[date]" ok-type="integer">Date</button>
         </div>
 
       </div>
