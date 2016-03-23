@@ -86,14 +86,14 @@
     .withTableToolsButtons([
       {
         sExtends: 'text',
-        sButtonText: '<i class="fa fa-fw fa-plus"></i>',
+        sButtonText: '<i class="nc-icon-mini ui-1_simple-add"></i>',
         fnClick: function(nButton, oConfig, oFlash) {
           $window.alert('Handle adding a new record.');
         }
       },
       {
         sExtends: 'text',
-        sButtonText: '<i class="fa fa-fw fa-trash-o"></i>',
+        sButtonText: '<i class="nc-icon-mini ui-1_trash-simple"></i>',
         fnClick: function(nButton, oConfig, oFlash) {
           var selected = [];
 
@@ -143,7 +143,7 @@
         var html = '';
         html += '<div class="dropdown pull-right">';
         html += '<a href="" class="dropdown-toggle text-nowrap" data-toggle="dropdown">';
-        html += 'Actions <i class="fa fa-fw fa-angle-down"></i>';
+        html += 'Actions <i class="nc-icon-mini arrows-2_small-down"></i>';
         html += '</a>';
         html += '<ul class="dropdown-menu dropdown-menu-right" role="menu">';
         html += '<li><a href="" ng-click="datatablesnet.datatable.edit(' + data.id + ')">Edit</a></li>';

@@ -1,3 +1,5 @@
+// scss-lint:disable VendorPrefix
+
 // styles for landingpages
 
 // first, the styles common across all of them>
@@ -20,6 +22,13 @@
   .bg-h {
     flex-direction: row;
     align-items: center;
+  }
+
+  .arrow-btn {
+    color: #fff;
+    &:hover {
+      color: darken(#fff, 10%);
+    }
   }
 
 
@@ -57,7 +66,10 @@
   strong,
   em,
   label,
-  .fa {
+  .fa
+  .nc-icon-mini,
+  .nc-icon-outline
+   {
     color: #fff;
   }
 

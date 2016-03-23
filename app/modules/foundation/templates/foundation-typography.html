@@ -19,6 +19,7 @@
             <li><a ui-sref="foundation.typography({'#':'tabs-tables'})">Tabs &amp; Tables</a></li>
             <li><a ui-sref="foundation.typography({'#':'navigation'})">Navigation</a></li>
             <li><a ui-sref="foundation.typography({'#':'ui-controls'})">UI Controls</a></li>
+            <li><a ui-sref="foundation.typography({'#':'colors'})">Text Colors</a></li>
             <li><a ui-sref="foundation.typography({'#':'lists'})">Lists</a></li>
           </ul>
         </div>
@@ -214,24 +215,21 @@
     <div class="col-xs-12">
       <figure>
         <h2 class="tab-header specifications">Header Above a Section of Tabs</h2>
+        <ul class="nav nav-tabs" ng-class="{'nav-stacked': vertical, 'nav-justified': justified}" ng-transclude="">
+          <li ng-class="[{active: active, disabled: disabled}, classes]" class="uib-tab nav-item ng-scope ng-isolate-scope active" index="0" heading="Static title">
+            <a href="" ng-click="select()" class="nav-link ng-binding" uib-tab-heading-transclude="">Tab 1</a>
+          </li>
 
-          <uib-tabset>
-            <uib-tab>
-              <tab-heading>
-                Tab One
-              </tab-heading>
-            </tab>
-            <uib-tab>
-              <tab-heading>
-                Tab Two
-              </tab-heading>
-            </uib-tab>
-            <uib-tab>
-              <tab-heading>
-                Tab Three
-              </tab-heading>
-            </uib-tab>
-          </uib-tabset>
+
+          <li ng-class="[{active: active, disabled: disabled}, classes]" class="uib-tab nav-item ng-scope ng-isolate-scope" index="3" select="alertMe()">
+            <a href="" ng-click="select()" class="nav-link ng-binding" uib-tab-heading-transclude="">
+              <uib-tab-heading class="ng-scope">
+                Tab 2
+              </uib-tab-heading>
+            </a>
+          </li>
+        </ul>
+
 
       </figure>
     </div>
@@ -336,6 +334,19 @@
         </tr>
       </table>
 
+    </div>
+  </div>
+
+
+  <div  class="row">
+    <div class="col-xs-12">
+      <h1 id="colors" class="doc-head">Colors</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8">
+      <p>Although the colors defined above should be used, in some cases you may need to color a particular piece of text a specific color from the Design System palette. We have provided <a ui-sref="helpers({'#':'text-colors'})">Helper classes</a> designed for this purpose. </p>
     </div>
   </div>
 
@@ -470,5 +481,7 @@
       </figure>
     </div>
   </div>
+
+
 
 </div>

@@ -16,7 +16,7 @@
                 <div class="list-group">
                   <a class="list-group-item" href="" ng-class="{active: $index === panels.millercolumn.dataSelected}" ng-click="panels.getSublevel1($index)" ng-repeat="topLevel in panels.millercolumn.data.versionInfos">
                     {{::topLevel.name}}
-                    <i class="pull-right fa fa-angle-right fa-lg"></i>
+                    <i class="pull-right nc-icon-mini lg fw arrows-2_small-right"></i>
                   </a>
                 </div>
               </div>
@@ -28,7 +28,7 @@
                 <div class="list-group">
                   <a class="list-group-item" href="" ng-class="{active: $index === panels.millercolumn.level1Selected && level1.versionInfos.length > 0}" ng-click="panels.getSublevel2($index)" ng-repeat="level1 in panels.millercolumn.level1">
                     {{::level1.name}}
-                    <i class="pull-right fa fa-fw fa-angle-right fa-lg"></i>
+                    <i class="pull-right nc-icon-mini lg fw arrows-2_small-right"></i>
                     <span class="badge">{{::level1.versionInfos.length}}</span>
                   </a>
               </div>

@@ -1,0 +1,228 @@
+<div class="doc-hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="hero-header">
+          <div class="eyebrow">Patterns</div>
+          <h1>Drag and Drop</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid spacer-top-xl">
+
+  <div class="row">
+    <div class="col-xs-12">
+
+      <table class="table table-dragdrop">
+        <thead>
+          <tr class="category">
+            <th></th>
+            <th></th>
+            <th class="column">What does the page contain to indicate drag and drop?</th>
+            <th class="column">What happens when the mouse hovers over the draggable object?</th>
+            <th class="column">What happens when the mouse is pressed on the draggable object but dragging has not initiated?</th>
+            <th class="column">What happens when drag starts?</th>
+            <th class="column">What happens when I drag over a valid drop target?</th>
+            <th class="column">What happens when I drag over an invalid drop target?</th>
+            <th class="column">What happens when I drag back to the original position?</th>
+            <th class="column">What happens when the drop is accepted?</th>
+            <th class="column">What happens when the drop is rejected?</th>
+            <th class="column">What happens when dropped over the original position?</th>
+          </tr>
+          <tr>
+            <th></th>
+            <th></th>
+            <th colspan="10" class="text-center">
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980.15 14.15">
+                <path class="cls-1" d="M5.38 5.78h1"/>
+                <path class="cls-2" d="M8.39 5.78h964.38"/>
+                <path class="cls-1" d="M973.77 5.78h1"/>
+                <path class="cls-3" d="M6.48 9.52L0 5.78l6.48-3.74v7.48zm967.2 0l6.47-3.74-6.47-3.74v7.48z"/>
+                <path class="cls-4" d="M464.62 0h50.91v11.55h-50.91z"/>
+                <text class="cls-5" transform="translate(467.85 9.34)">
+                  ACTIONS
+                </text>
+              </svg>
+            </th>
+          </tr>
+          <tr>
+            <th></th>
+            <th></th>
+            <th class="text-center">Page Load</th>
+            <th class="text-center">Mouse Hover</th>
+            <th class="text-center">Mouse Down</th>
+            <th class="text-center">Drag Initiated</th>
+            <th class="text-center">Drag Over Valid Target</th>
+            <th class="text-center">Drag Over Invalid Target</th>
+            <th class="text-center">Drag Over Original Position</th>
+            <th class="text-center">Drop Accepted</th>
+            <th class="text-center">Drop Rejected</th>
+            <th class="text-center">Drop On Original Position</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="7" class="no-border text-center" style="width: 70px;">
+              <!-- <svg id="Layer_2" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.15 845.33">
+                <path class="cls-1a" d="M25.57 5.38v1"/>
+                <path class="cls-2a" d="M25.57 8.38v629.57"/>
+                <path class="cls-1a" d="M25.57 638.95v1"/>
+                <path class="cls-3a" d="M21.83 6.48L25.57 0l3.74 6.48h-7.48zm0 632.38l3.74 6.47 3.74-6.47h-7.48z"/>
+                <path class="cls-4a" d="M.12 309.25h50.91v11.55H.12z"/>
+                <text class="cls-5a" transform="translate(2.51 318.59)">
+                  OBJECTS
+                </text>
+              </svg> -->
+              <svg width="40" height="620" viewBox="0 0 20 620">
+                <defs>
+                  <marker id="arrowup" markerWidth="25" markerHeight="25"><path fill="#662D91" d="M12.5 0l12.5 25h-25z"/></marker>
+                  <marker id="arrowdown" markerWidth="25" markerHeight="25"><path d="M0 0h25l-12.5 25-12.5-25z" fill="#662D91"/></marker>
+                </defs>
+                <line x1="20" y1="0" x2="20" y2="620" stroke="#662d91" stroke-width=".75" stroke-dasharray="5, 2" marker-end="url(#arrowdown)" />
+              </svg>
+
+              <!-- <svg width="20" height="620" viewBox="0 0 20 620" xmlns="http://www.w3.org/2000/svg"><title>arrow</title><desc>Created with Sketch.</desc><g fill="none"><path d="M10 0v620" stroke="#662D91" stroke-width=".75" stroke-dasharray="5,2" fill="#000"/><path fill="#662D91" d="M10 0l10 20h-20z"/><path d="M0 600h20l-10 20-10-20z" fill="#662D91"/></g></svg> -->
+            </td>
+            <td class="no-border text-right">Page</td>
+            <td>messaging indicating drag an drop functionality, if necessary</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td class="no-border text-right">Cursor</td>
+            <td class="text-center"><i class="fa fa-mouse-pointer"></i></td>
+            <td class="text-center"><i class="fa fa-hand-pointer-o"></i></td>
+            <td class="text-center"><i class="fa fa-hand-rock-o"></i></td>
+            <td class="text-center"><i class="fa fa-hand-rock-o"></i></td>
+            <td class="text-center"><i class="fa fa-hand-rock-o"></i></td>
+            <td class="text-center"><i class="fa fa-hand-rock-o"></i></td>
+            <td class="text-center"><i class="fa fa-hand-rock-o"></i></td>
+            <td class="text-center"><i class="fa fa-mouse-pointer"></i></td>
+            <td class="text-center"><i class="fa fa-mouse-pointer"></i></td>
+            <td class="text-center"><i class="fa fa-mouse-pointer"></i></td>
+          </tr>
+
+          <tr>
+            <td class="no-border text-right">Tooltip</td>
+            <td></td>
+            <td>click and hold to drag</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td class="no-border text-right">Drag Object</td>
+            <td>normal</td>
+            <td>thumb/gripper control may appears on certain objects</td>
+            <td>object turns gray by 10%</td>
+            <td>object changes to 80% opacity, drop shadow appears behind object</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>returns to full opacity </td>
+            <td>snaps back to original position and returns to full opacity</td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td class="no-border text-right">Drag Object Original Position</td>
+            <td>normal</td>
+            <td></td>
+            <td></td>
+            <td>background turns gray and maintains position until cursor is no longer over container, then adjacent objects move up to fill</td>
+            <td></td>
+            <td></td>
+            <td>background maintains gray and position</td>
+            <td>returns to original background color</td>
+            <td>returns to original background color</td>
+            <td>returns to original background color</td>
+          </tr>
+
+          <tr>
+            <td class="no-border text-right">Drop Target</td>
+            <td>normal</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>adjacent objects shift to make room for new drag object, target area appears with a black 5% opacity background and a black 10% opacity dotted line; any text, image or button inside of drag target does not darken</td>
+            <td></td>
+            <td>adjacent objects shift to make room for new drag object, target area appears with a black 5% opacity background and a black 10% opacity dotted line; any text, image or button inside of drag target does not darken</td>
+            <td>returns to original background color</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td class="no-border text-right">Animation</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>target grows by 110% (use grow animation with ease in</td>
+            <td></td>
+            <td></td>
+            <td>target shrinks down to original size (use shrink animation with ease out)</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+</div>
+<div class="container spacer-top-xl">
+
+  <div class="row">
+
+    <div class="col-md-6">
+      <div class="panel panel-default drag-container">
+        <div class="panel-body" dragula="'first-bag'" dragula-model="dragdrop.items.unselected">
+          <div class="drag-item" ng-repeat="item in dragdrop.items.unselected track by item.id" uib-tooltip="Click and hold to drag." tooltip-enable="dragdrop.tooltip.isEnabled">
+            <span>{{::item.label}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-body" dragula="'first-bag'" dragula-model="dragdrop.items.selected" >
+          <div class="drag-item" ng-repeat="item in dragdrop.items.selected track by item.id" uib-tooltip="Click and hold to drag." tooltip-enable="dragdrop.tooltip.isEnabled">
+            <span>{{::item.label}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <pre>{{dragdrop.items.unselected | json}}</pre>
+    </div>
+
+    <div class="col-md-6">
+      <pre>{{dragdrop.items.selected | json}}</pre>
+    </div>
+  </div>
+
+</div>

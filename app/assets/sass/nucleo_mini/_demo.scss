@@ -1,0 +1,104 @@
+// scss-lint:disable MergeableSelector
+
+.nucleo-demo {
+  /* --------------------------------
+
+Main components
+
+-------------------------------- */
+
+
+  section {
+    h2 {
+      border-bottom: 1px solid #e2e2e2;
+      padding: 0 0 1em .2em;
+      margin-bottom: 1em;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    li {
+      padding: 16px 0;
+      text-align: center;
+      border-radius: .25em;
+      transition: background .2s;
+      user-select: none;
+      overflow: hidden;
+      width: 180px;
+      @include breakpoint(screen-xs) {
+        width: 150px;
+        font-size: 11px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  ul p, ul em {
+    display: inline-block;
+    font-size: .8em;
+    color: #454545;
+    font-family: menlo, consolas, monospace;
+    user-select: auto;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+  }
+
+  ul p {
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  ul p::selection, ul em::selection {
+    background: #766acf;
+    color: #efefef;
+  }
+  ul em::before {
+    content: '[';
+  }
+  ul em::after {
+    content: ']';
+  }
+  @media only screen and (min-width: 768px) {
+    ul li {
+      width: 20%;
+      float: left;
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    ul li {
+      width: 12.5%;
+      float: left;
+      padding: 32px 0;
+    }
+  }
+
+
+  /* --------------------------------
+
+icons
+
+-------------------------------- */
+  .nc-icon-mini {
+    display: inline-block;
+    font: normal normal normal 24px/1 'Nucleo Mini';
+    speak: none;
+    text-transform: none;
+    /* Better Font Rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .nc-icon-outline {
+    display: inline-block;
+    font: normal normal normal 48px/1 'Nucleo Outline';
+    speak: none;
+    text-transform: none;
+    /* Better Font Rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}

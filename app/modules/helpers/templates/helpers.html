@@ -11,6 +11,21 @@
     </div>
   </div>
 
+  <div headroom class="sub-header jump-bar headroom" tolerance="5" offset="240" classes="{'initial':'','pinned':'','unpinned':'','top':'headroom-top','notTop':'headroom-not-top'}">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list-unstyled list-inline jump-menu">
+            <li><a ui-sref="helpers({'#':'spacers'})">Spacers</a></li>
+            <li><a ui-sref="helpers({'#':'colors'})">Contextual Colors</a></li>
+            <li><a ui-sref="helpers({'#':'transition-all'})">Transition All</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 
@@ -22,11 +37,11 @@
   <!-- SPACERS -->
   <div class="row">
     <div class="col-md-12">
-      <h2 class="doc-sectionhead">Spacers</h2>
+      <h1 id="spacers" class="doc-head">Spacers</h1>
     </div>
   </div>
 
-  <div class="row">
+  <div class="row spacer-top-md">
     <div class="col-md-8">
       <p>Use <code>spacer-*</code> classes to add margin above or below any element (typically used on a row). Note that the spacers have media queries and will automatically resize to 75% based on screen dimensions.</p>
     </div>
@@ -110,72 +125,22 @@
 
 
 
-  <!-- TRANSITION ALL -->
-  <div class="row">
-    <div class="col-md-12">
-      <h2 class="doc-sectionhead">Transition All</h2>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-8">
-      <p>Quickly add CSS transitions by adding <code>.transition-all</code>. When adding modifier classes, such as <code>.fa-rotate-90</code> in Font Awesome to an icon, the element will animate all property changes.</p>
-    </div>
-  </div>
 
 
-  <div class="preview-example">
-
-    <div class="row">
-
-      <div class="col-md-4">
-        <h2>
-          <a href="" ng-init="helpers.icon1.rotate = false" ng-click="helpers.icon1.rotate = !helpers.icon1.rotate">
-            <i class="fa fa-fw fa-icon fa-angle-right fa-lg transition-all" ng-class="{'fa-rotate-90': helpers.icon1.rotate}"></i> Click me and I will rotate
-          </a>
-        </h2>
-      </div>
-
-      <div class="col-md-4">
-        <h2>
-          <a href="" ng-init="helpers.icon2.rotate = false" ng-click="helpers.icon2.rotate = !helpers.icon2.rotate">
-            <i class="fa fa-fw fa-icon fa-arrow-down fa-lg transition-all" ng-class="{'fa-rotate-90': helpers.icon2.rotate}"></i> Click me and I will rotate
-          </a>
-        </h2>
-      </div>
-
-      <div class="col-md-4">
-        <h2>
-          <a href="" ng-init="helpers.icon3.rotate = false" ng-click="helpers.icon3.rotate = !helpers.icon3.rotate">
-            <i class="fa fa-fw fa-icon fa-bars fa-lg transition-all" ng-class="{'fa-rotate-90': helpers.icon3.rotate}"></i> Click me and I will rotate
-          </a>
-        </h2>
-      </div>
-
-    </div>
-
-  </div>
-
-<div class="preview-code" hljs language="xml">
-<div>
-  <a href="" ng-click="someClickHandler()">
-    <i class="fa fa-fw fa-icon fa-angle-right transition-all" ng-class="{'fa-rotate-90': some.model.boolean}"></i> Click me and I will rotate
-  </a>
-</div>
-</div>
-
-
-
-<!-- TRANSITION ALL -->
 <div class="row">
   <div class="col-md-12">
-    <h2 class="doc-sectionhead">Contextual Background Colors</h2>
+    <h1 id="colors" class="doc-head">Contextual Colors</h1>
   </div>
 </div>
 
 <div class="row">
+  <div class="col-md-12">
+    <h2 class="doc-sectionhead">Functional Background Colors</h2>
+  </div>
+</div>
+<div class="row">
   <div class="col-md-8">
-    <p>Add background colors to elements using modifier classes.</p>
+    <p>Add Bootstrap functional background colors to elements using these modifier classes.</p>
   </div>
 </div>
 
@@ -214,7 +179,7 @@
 
 <div class="row">
   <div class="col-md-8">
-    <p>Add background colors to elements using modifier classes.</p>
+    <p>Add background colors from the Design System palette to elements using these modifier classes.</p>
   </div>
 </div>
 <div class="preview-example">
@@ -231,6 +196,7 @@
   <p class="bg-header-color"></p>
   <p class="bg-header-color-alt"></p>
   <p class="bg-white"></p>
+  <p class="bg-black"></p>
   <p class="bg-pb-medium-blue-300"></p>
   <p class="bg-pb-medium-blue"></p>
   <p class="bg-pb-medium-blue-700"></p>
@@ -281,26 +247,28 @@
 
 <div class="row">
   <div class="col-md-12">
-    <h2 class="doc-sectionhead">Brand Foreground Colors</h2>
+    <h2 id="text-colors" class="doc-sectionhead">Brand Text Colors</h2>
   </div>
 </div>
 
 <div class="row">
   <div class="col-md-8">
-    <p>Add colors to elements using modifier classes.</p>
+    <p>Add text colors from the Design System palette to elements using these modifier classes.</p>
   </div>
 </div>
 <div class="preview-example">
 
   <div class="row">
     <div class="col-md-8">
-      <p ng-repeat="fg in helpers.foregrounds" ng-class="fg">This is some text.</p>
+      <p ng-repeat="fg in helpers.foregrounds" ng-class="fg">This is class '{{fg}}'.</p>
     </div>
   </div>
 
 </div>
 
-<div class="preview-code" hljs language="xml">
+<div class="preview-code" hljs language="html">
+  <p class="text-white"></p>
+  <p class="text-black"></p>
   <p class="text-medium-blue-300"></p>
   <p class="text-medium-blue"></p>
   <p class="text-medium-blue-700"></p>
@@ -342,6 +310,62 @@
   <p class="text-bg4"></p>
   <p class="text-bg5"></p>
 </div>
+
+
+  <!-- TRANSITION ALL -->
+  <div class="row">
+    <div class="col-md-12">
+      <h1 id="transition-all" class="doc-head">Transition All</h1>
+    </div>
+  </div>
+
+  <div class="row spacer-top-md">
+    <div class="col-md-8">
+      <p>Quickly add CSS transitions by adding <code>.transition-all</code>. When adding modifier classes, such as <code>.rotate-90</code> to Nucleo icon fonts, the element will animate all property changes and therefore smoothly rotate.</p>
+    </div>
+  </div>
+
+
+  <div class="preview-example">
+
+    <div class="row">
+
+      <div class="col-md-4">
+        <h2>
+          <a href="" ng-init="helpers.icon1.rotate = false" ng-click="helpers.icon1.rotate = !helpers.icon1.rotate">
+            <i class="nc-icon-mini lg arrows-2_small-right transition-all" ng-class="{'rotate-90': helpers.icon1.rotate}"></i> Click me and I will rotate
+          </a>
+        </h2>
+      </div>
+
+      <div class="col-md-4">
+        <h2>
+          <a href="" ng-init="helpers.icon2.rotate = false" ng-click="helpers.icon2.rotate = !helpers.icon2.rotate">
+            <i class="nc-icon-mini lg arrows-1_simple-down transition-all" ng-class="{'rotate-90': helpers.icon2.rotate}"></i> Click me and I will rotate
+          </a>
+        </h2>
+      </div>
+
+      <div class="col-md-4">
+        <h2>
+          <a href="" ng-init="helpers.icon3.rotate = false" ng-click="helpers.icon3.rotate = !helpers.icon3.rotate">
+            <i class="nc-icon-mini lg shopping_list transition-all" ng-class="{'rotate-90': helpers.icon3.rotate}"></i> Click me and I will rotate
+          </a>
+        </h2>
+      </div>
+
+    </div>
+
+  </div>
+
+<div class="preview-code" hljs language="xml">
+<div>
+  <a href="" ng-click="someClickHandler()">
+    <i class="nc-icon-mini lg arrows-2_small-right transition-all" ng-class="{'rotate-90': some.model.boolean}"></i> Click me and I will rotate
+  </a>
+</div>
+</div>
+
 
 
 

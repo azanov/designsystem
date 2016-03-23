@@ -130,7 +130,7 @@
 
 // for case when the controls are used in a form-horizontal class
 .form-horizontal {
-  & .radio, .checkbox, .radio-inline, .checkbox-inline {
+   .radio, .checkbox, .radio-inline, .checkbox-inline {
      padding-top: 0;
    }
 }
@@ -152,6 +152,6 @@
   z-index: 4;
   border: 0;
   opacity: 1;
-  color: silver;
+  color: #c0c0c0;
   transition: all .3s ease-in-out;
 }

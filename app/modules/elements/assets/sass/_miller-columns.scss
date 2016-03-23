@@ -1,0 +1,73 @@
+//Miller Columns
+// scss-lint:disable SelectorDepth
+.miller-columns {
+  margin-bottom: 20px;
+  height: 450px;
+  .panel {
+    height: 100%;
+    overflow-y: auto;
+
+    .list-group .list-group-item {
+      border-bottom: solid 1px $pb-bg5;
+      transition: background-color 300ms linear, color 200ms linear;
+
+      &:first-child {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      &:hover {
+        background-color: $bg-hover;
+      }
+
+      &.active {
+        &:hover, &:focus{
+          background-color: $table-bg-active;
+        }
+      }
+    }
+
+  }
+
+  .first-column {
+    padding-right: 0;
+    height: 100%;
+    .panel-default {
+      border-right: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      .panel-heading {
+        border-top-right-radius: 0;
+      }
+    }
+  }
+  .inner-column {
+    padding-left: 0;
+    padding-right: 0;
+    height: 100%;
+    .panel-default {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      .panel-heading {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+  }
+  .last-column {
+    padding-left: 0;
+    height: 100%;
+    .panel-default {
+      border-left: 0;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      .panel-heading {
+        border-top-left-radius: 0;
+      }
+    }
+  }
+}

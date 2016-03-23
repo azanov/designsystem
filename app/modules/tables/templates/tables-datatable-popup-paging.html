@@ -12,15 +12,15 @@
     <div class="col-md-3">
 
       <button type="button" class="btn btn-default" uib-tooltip="Add&nbsp;user">
-        <i class="fa fa-fw fa-plus"></i>
+        <i class="nc-icon-mini fw ui-1_simple-add"></i>
       </button>
 
       <button ng-if="datatable.table.selectedRows.length" type="button" class="btn btn-default" uib-tooltip="Delete">
-        <i class="fa fa-fw fa-trash-o"></i>
+        <i class="nc-icon-mini ui-1_trash-simple"></i>
       </button>
 
       <button ng-if="datatable.table.selectedRows.length === 1" type="button" class="btn btn-default" uib-tooltip="Edit">
-        <i class="fa fa-fw fa-pencil"></i>
+        <i class="nc-icon-mini fw ui-1_pencil"></i>
       </button>
 
     </div>
@@ -29,13 +29,9 @@
 
       <form class="form-inline pull-right">
 
-        <!-- <a href="" date-range-picker class="btn btn-link date-picker" type="text" ng-model="datatable.table.daterangepicker.date" options="datatable.table.daterangepicker.options">
-          <i class="fa fa-fw fa-calendar"></i> {{datatable.table.daterangepicker.displayDate()}} <i class="fa fa-angle-down"></i>
-        </a> -->
-
         <div class="form-group dropdown">
           <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-            <i class="fa fa-fw fa-filter"></i> {{datatable.table.search.country || 'All countries'}} <i class="fa fa-angle-down"></i>
+            <i class="nc-icon-mini fw ui-2_filter"></i> {{datatable.table.search.country || 'All countries'}} <i class="nc-icon-mini arrows-2_small-down"></i>
           </button>
           <ul class="dropdown-menu" role="menu">
             <li class="dropdown-header">Country filter</li>
@@ -53,11 +49,11 @@
         <div class="input-group">
 
           <div class="input-group-addon">
-              <i class="fa fa-fw fa-search"></i>
+              <i class="nc-icon-mini fw ui-1_zoom"></i>
           </div>
 
             <input class="form-control search" type="text" placeholder="Search" ng-model="datatable.table.search.$" ng-model-options="{debounce: 300}" required>
-            <button class="btn btn-link search-clear" type="reset" ng-click="datatable.table.searchClear()"><i class="fa fa-fw fa-times-circle"></i></button>
+            <button class="btn btn-link search-clear" type="reset" ng-click="datatable.table.searchClear()"><i class="nc-icon-mini fw ui-1_circle-remove"></i></button>
         </div>
 
       </form>
@@ -78,14 +74,14 @@
             <th>&nbsp;</th>
             <th>
               <a href="" class="text-nowrap" ng-click="datatable.table.sort.change('first_name')">First Name
-                <i class="fa fa-fw fa-sort text-muted" ng-if="datatable.table.sort.type !== 'first_name'"></i>
-                <i class="fa fa-fw fa-sort" ng-if="datatable.table.sort.type === 'first_name'" ng-class="{'fa-sort-desc': !datatable.table.sort.reverse, 'fa-sort-asc': datatable.table.sort.reverse}"></i>
+                <i class="nc-icon-mini fw arrows-2_select-83 text-muted" ng-if="datatable.table.sort.type !== 'first_name'"></i>
+                <i class="nc-icon-mini fw arrows-2_select-83" ng-if="datatable.table.sort.type === 'first_name'" ng-class="{'arrows-1_small-triangle-down': !datatable.table.sort.reverse, 'arrows-1_small-triangle-up': datatable.table.sort.reverse}"></i>
               </a>
             </th>
             <th>
               <a href="" class="text-nowrap" ng-click="datatable.table.sort.change('last_name')">Last Name
-                <i class="fa fa-fw fa-sort text-muted" ng-if="datatable.table.sort.type !== 'last_name'"></i>
-                <i class="fa fa-fw" ng-if="datatable.table.sort.type === 'last_name'" ng-class="{'fa-sort-desc': !datatable.table.sort.reverse, 'fa-sort-asc': datatable.table.sort.reverse}"></i>
+                <i class="nc-icon-mini fw arrows-2_select-83 text-muted" ng-if="datatable.table.sort.type !== 'last_name'"></i>
+                <i class="nc-icon-mini fw" ng-if="datatable.table.sort.type === 'last_name'" ng-class="{'arrows-1_small-triangle-down': !datatable.table.sort.reverse, 'arrows-1_small-triangle-up': datatable.table.sort.reverse}"></i>
               </a>
             </th>
             <th>Email</th>
@@ -107,7 +103,7 @@
             <td><input type="checkbox" ng-model="item.selected" ng-click="datatable.table.selectRow(item, $event)"></td>
             <td>
               <a href="" class="table-row-toggle" ng-init="item.showDetails = false" ng-click="datatable.table.showDetails(item, $event)">
-                <i class="fa fa-fw fa-lg fa-angle-right transition-all" ng-class="{'fa-rotate-90': item.showDetails}"></i>
+                <i class="nc-icon-mini lg fw arrows-2_small-right transition-all" ng-class="{'rotate-90': item.showDetails}"></i>
               </a>
             </td>
             <td>{{::item.first_name}}</td>
@@ -115,7 +111,7 @@
             <td><a href="#" ng-click="datatable.table.selectEmail(item, $event)">{{::item.email}}</a></td>
             <td><span class="text-nowrap">{{::item.country}}</span></td>
             <td>{{::item.date.created | date:'MM/dd/yyyy'}}</td>
-            <td><i class="fa fa-fw" ng-class="{'fa-user': item.userType === 'user', 'fa-user-secret': item.userType === 'admin'}"></i></td>
+            <td><i class="nc-icon-mini fw" ng-class="{'users_single-04': item.userType === 'user', 'users_single-04-secret': item.userType === 'admin'}"></i></td>
             <td>
               <span ng-repeat="group in (item.groups | orderBy: group | limitTo: item.limit || datatable.table.groups.min) track by $index">
                 {{::group}}<span ng-if="!$last">, </span>

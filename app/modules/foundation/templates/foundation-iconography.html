@@ -10,14 +10,13 @@
     </div>
   </div>
 
-
-  <div headroom class="sub-header jump-bar headroom" tolerance="5" offset="240" classes="{'initial':'','pinned':'','unpinned':'','top':'headroom-top','notTop':'headroom-not-top'}">
+<div headroom class="sub-header jump-bar headroom" tolerance="5" offset="240" classes="{'initial':'','pinned':'','unpinned':'','top':'headroom-top','notTop':'headroom-not-top'}">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <ul class="list-unstyled list-inline jump-menu">
+            <li><a ui-sref="foundation.iconography({'#':'logo'})">Corporate Logo</a></li>
             <li><a ui-sref="foundation.iconography({'#':'icon-strategy'})">Icon Strategy</a></li>
-            <li><a ui-sref="foundation.iconography({'#':'illustrative-icons'})">Illustrative Icons</a></li>
             <li><a ui-sref="foundation.iconography({'#':'functional-icons'})">Functional Icons</a></li>
           </ul>
         </div>
@@ -32,19 +31,31 @@
 
   <div class="row">
     <div class="col-md-8">
+      <h1 id="logo" class="doc-head">Corporate Logo</h1>
+      <p class="lede">
+        Our logo is the cornerstone of our visual identity. It captures the essence of what makes us unique, and symbolizes how we create meaningful impact for our clients, and their customers, in the world of commerce. ​</p>
+
+        <p class="spacer-bottom-md"><img  src="modules/foundation/assets/images/logo-400.svg" alt="logo"></p>
+
+        <p>View <a href="http://brandcentral.pb.com/content/pbdam/en/search-asset.html?q=%27pb%20logo%27" target="_blank">approved logos</a> on Brand Central. When applying the logo, be sure to reference all of our <a href="https://our.pb.com/Resources/Brand/Documents/pb_logo_qrg_121014.pdf" target="_blank">logo brand guidelines (PDF)</a>, which you can also find on Brand Central.​
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8">
       <h1 id="icon-strategy" class="doc-head">Icon Strategy</h1>
       <p class="doc-lede">Our family of icons and illustrations provides a core set that&rsquo;s also extensible, which enables you to apply our iconography to deeper areas of your product as needed.</p>
-    </div>
-  </div>
 
-  <div class="row spacer-top-md">
-    <div class="col-md-8">
       <p>In general, we use illustrative icons in our product marketing &mdash; these reflect our brand&rsquo;s broad concepts. For product functionality we use functional icons &mdash; these reflect actions, tasks, settings and other practical aspects of our products.</p>
-
-      <p>Need help with using our logo? Download <a href="http://designsystem.pbi.global.pvt:8080/wp-content/uploads/2014/12/PB-Logo-Quick-Reference.pdf" target="_blank">logo guidance</a> or <a href="http://designsystem.pbi.global.pvt:8080/wp-content/uploads/2014/12/PB_logos.zip" target="_blank">logo files</a>.</p>
+      <p>
+        <a href="https://our.pb.com/Resources/Brand/Documents/Complete%20brand%20guidelines.pdf" target="_blank">Download the complete Brand Guidelines (PDF)</a>.
+      </p>
 
     </div>
   </div>
+
+<!-- TBD: how to treat the PB brand icons? Do we provide links?  Just showing them is not helpful.
 
 
   <div class="row">
@@ -111,137 +122,100 @@
     </div>
   </div>
 
-
+-->
 
   <div class="row">
     <div class="col-md-8">
       <h1 id="functional-icons" class="doc-head">Functional Icons</h1>
       <p class="doc-lede">Our functional icons are designed to convey a product&rsquo;s commands, categories or common actions visually. Unlike our illustrations, they are &ldquo;live&rsquo; objects in that they are used for navigation or button commands.</p>
+      <p>
+        These icons are provided as fonts along with the Design System and are used within HTML with an "i" tag using classes of the font name and the icon name, as follows:
+      </p>
+      <p class="preview-code" hljs language="html"><i class="nc-icon-outline nature_tree-02"></i></p>
+
+      <p>The Design System package includes 2 commercial icon fonts, <a ui-sref="foundation.nucleo-mini">Nucleo Icon Mini</a> and <a ui-sref="foundation.nucleo-outline">Nucleo Icon Outline</a>.  Nucleo Mini is to be used for on-screen icons under 24 pixels, and Nucleo Outline is to be used for 24 pixels and larger.</p>
+
+      <p>We also provide a custom Design System font called "PBfont". This font is periodically updated with custom icons as needed by PB applications. The class name for these icons (shown below) is <code>pbfont</code></p>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="row">
+    <div class="col-md-12">
+      <h1 id="nucleo-outline" class="doc-sectionhead">Nucleo Icon Outline</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <p>A commercial icon font provided in the Design System <a href="https://github.com/PBGUX/bower-designsystem" target="_blank">Bower package <i class="nc-icon-mini ui-2_link-72"></i></a> to be used for on-screen icons 24 pixels and larger. <a ui-sref="foundation.nucleo-outline">View entire font here</a>.</p>
+    </div>
+  </div>
+
+  <div class="row spacer-top-sm">
+    <div class="col-md-12">
+      <ul class="icon-grid pb-icons">
+        <li ng-repeat="icon in icons.ncIcons"><i class="nc-icon-outline {{::icon}} x3"></i>
+          <br>{{::icon}}</li>
+      </ul>
     </div>
   </div>
 
 
   <div class="row">
     <div class="col-md-12">
-      <h1 class="doc-sectionhead">Pitney Bowes Icons</h1>
+      <h1 id="nucleo-mini" class="doc-sectionhead">Nucleo Icon Mini</h1>
     </div>
   </div>
 
   <div class="row">
     <div class="col-md-12">
-      <p>Our Pitney Bowes icons cover a range of functions typically found in our products.</p>
+      <p>A commercial icon font provided in the Design System <a href="https://github.com/PBGUX/bower-designsystem" target="_blank">Bower package <i class="nc-icon-mini ui-2_link-72"></i></a> to be used for on-screen icons less than 24 pixels in size. <a ui-sref="foundation.nucleo-mini">View entire font here</a>.</p>
+    </div>
+  </div>
+
+  <div class="row spacer-top-sm">
+    <div class="col-md-12">
+      <ul class="icon-grid glyphicons pb-icons">
+        <li ng-repeat="icon in icons.ncIcons"><i class="nc-icon-mini {{::icon}} x2"></i>
+          <br>{{::icon}}</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8">
+      <div class="alert alert-info">
+        When converting a project from Font Awesome to Nucleo, you can refer to <a href="app/modules/foundation/assets/fa-to-nucleo-conversions.pdf" target="_blank">this conversion table</a> (PDF).
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="doc-sectionhead">PB Font</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <p>Our PB Font is an icon font created to cover a range of functions typically found in our products. It is periodically updted with custom artwork provided by our in-house designers.  If you need a custom icon that would be best used as a font, please <a href="mailto:designsystem@pb.com">let us know</a>.</p>
     </div>
   </div>
 
   <div class="row spacer-top-xl">
     <div class="col-md-12">
-      <ul class="block-grid-6 glyphicons">
-        <li ng-repeat="icon in icons.pbIcons"><i class="pbfont fa-fw fa-2x pb-{{::icon}}"></i>
+      <ul class="icon-grid glyphicons pb-icons">
+        <li ng-repeat="icon in icons.pbIcons"><i class="pbfont fw x2 pb-{{::icon}}"></i>
           <br>pb-{{::icon}}</li>
       </ul>
     </div>
   </div>
 
-
-
-  <div class="row">
-    <div class="col-md-12">
-      <h1 id="glyphicons" class="doc-sectionhead">Glyphicons</h1>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-12">
-      <p>These glyphicons further extend our core set of Pitney Bowes icons above.</p>
-    </div>
-  </div>
-
-  <div class="row spacer-top-xl">
-    <div class="col-md-12">
-
-      <ul class="block-grid-6 glyphicons">
-        <li>
-          <span class="glyphicon  fa-2x glyphicon-plus"></span>
-          <br><span class="glyphicon-class">glyphicon-plus</span>
-        </li>
-        <li>
-          <span class="glyphicon  fa-2x glyphicon-minus"></span>
-          <br><span class="glyphicon-class">glyphicon-minus</span>
-        </li>
-        <li>
-          <span class="glyphicon  fa-2x glyphicon-cloud"></span>
-          <br><span class="glyphicon-class">glyphicon-cloud</span>
-        </li>
-        <li>
-          <span class="glyphicon  fa-2x glyphicon-envelope"></span>
-          <br><span class="glyphicon-class">glyphicon-envelope</span>
-        </li>
-        <li>
-          <span class="glyphicon  fa-2x glyphicon-pencil"></span>
-          <br><span class="glyphicon-class">glyphicon-pencil</span>
-        </li>
-        <li>
-          <span class="glyphicon  fa-2x glyphicon-search"></span>
-          <br><span class="glyphicon-class">glyphicon-search</span>
-        </li>
-        <li>
-          <span class="glyphicon  fa-2x glyphicon-star"></span>
-          <br><span class="glyphicon-class">glyphicon-star</span>
-        </li>
-        <li>
-          <span class="glyphicon  fa-2x glyphicon-star-empty"></span>
-          <br><span class="glyphicon-class">glyphicon-star-empty</span>
-        </li>
-        <li>
-          <span class="glyphicon  fa-2x glyphicon-user"></span>
-          <br><span class="glyphicon-class">glyphicon-user</span>
-        </li>
-        <li>
-          <span class="glyphicon  fa-2x glyphicon-th-large"></span>
-          <br><span class="glyphicon-class">glyphicon-th-large</span>
-        </li>
-        <li>
-          <span class="glyphicon  fa-2x glyphicon-th"></span>
-          <br><span class="glyphicon-class">glyphicon-th</span>
-        </li>
-        <li>
-          <span class="glyphicon  fa-2x glyphicon-th-list"></span>
-          <br><span class="glyphicon-class">glyphicon-th-list</span>
-        </li>
-      </ul>
-
-      <div class="callout callout-info">Included as part of of Bootstrap. Please see <a href="http://getbootstrap.com/components/#glyphicons-glyphs" target="_blank">getbootstrap.com</a> for all icons.</div>
-
-    </div>
-  </div>
-
-
-
-  <div class="row">
-    <div class="col-md-12">
-      <h1 id="font-awesome" class="doc-sectionhead">Font Awesome</h1>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-12">
-      <p>You can further augment our iconography with these functional icons from Font Awesome.</p>
-    </div>
-  </div>
-
-  <div class="row spacer-top-xl">
-    <div class="col-md-12">
-      <ul class="block-grid-6">
-        <li ng-repeat="icon in icons.faIcons | limitTo:24" class="text-center">
-          <i class="fa fa-2x fa-{{::icon.id}}"></i>
-          <br>fa-{{::icon.id}}
-        </li>
-      </ul>
-
-      <div class="callout callout-info">Included in Design System via link to CDN. Please see <a href="http://fontawesome.io/icons/" target="_blank">fontawesome.io/icons/</a> for all latest icons. See <a href="http://fontawesome.io/examples/">fontawesome.io/examples/</a> for more examples and options.</div>
-
-    </div>
-  </div>
 
   <div class="row spacer-top-xl">
     <div class="col-md-12">
@@ -250,70 +224,127 @@
   </div>
 
   <div class="row">
-    <div class="col-md-2">
+    <div class="col-md-6">
       <figure>
         <figcaption>Spinning Icons</figcaption>
+        <p>You can set any icon to spin infinitely by simply adding the <code>.spin</code> class.</p>
         <ul class="list-inline">
           <li>
-            <i class="fa fa-2x fa-spinner fa-spin"></i>
+            <i class="nc-icon-mini loader_refresh x2 spin"></i>
           </li>
           <li>
-            <i class="fa fa-2x fa-circle-o-notch fa-spin"></i>
+            <i class="nc-icon-mini loader_circle-04 x2 spin"></i>
           </li>
           <li>
-            <i class="fa fa-2x fa-refresh fa-spin"></i>
+            <i class="nc-icon-mini loader_dots-06 x2 spin"></i>
           </li>
           <li>
-            <i class="fa fa-2x fa-cog fa-spin"></i>
+            <i class="nc-icon-outline loader_dots-06 x2 spin"></i>
+          </li>
+          <li>
+            <i class="nc-icon-mini loader_gear x2 spin"></i>
+          </li>
+          <li>
+            <i class="nc-icon-outline loader_gear x2 spin"></i>
           </li>
         </ul>
+        <div class="preview-code" hljs language="html">
+<i class="nc-icon-mini arrows-1_refresh x2 spin"></i>
+<i class="nc-icon-mini loader_circle-04 x2 spin"></i>
+<i class="nc-icon-mini loader_dots-06 x2 spin"></i>
+<i class="nc-icon-outline loader_dots-06 x2 spin"></i>
+<i class="nc-icon-mini loader_gear x2 spin"></i>
+<i class="nc-icon-outline loader_gear x2 spin"></i></div>
       </figure>
     </div>
 
-    <div class="col-md-3">
+    <div class="col-md-6">
+      <figure>
+        <figcaption>Quick Resizing</figcaption>
+        <p>You can quickly increase the size of an icon with a class of <code>x2</code> through <code>x6</code></p>
+        <i class="nc-icon-mini ui-1_bold-add"></i>
+        <i class="nc-icon-mini ui-1_bold-add lg"></i>
+        <i class="nc-icon-mini ui-1_bold-add x2"></i>
+        <i class="nc-icon-mini ui-1_bold-add x3"></i>
+        <i class="nc-icon-mini ui-1_bold-add x4"></i>
+        <i class="nc-icon-mini ui-1_bold-add x5"></i>
+        <i class="nc-icon-mini ui-1_bold-add x6"></i>
+        <p class="preview-code spacer-top-xs" hljs language="html">
+<i class="nc-icon-mini ui-1_bold-add"></i>
+<i class="nc-icon-mini ui-1_bold-add lg"></i>
+<i class="nc-icon-mini ui-1_bold-add x2"></i>
+<i class="nc-icon-mini ui-1_bold-add x3"></i>
+<i class="nc-icon-mini ui-1_bold-add x4"></i>
+<i class="nc-icon-mini ui-1_bold-add x5"></i>
+<i class="nc-icon-mini ui-1_bold-add x6"></i></p>
+      </figure>
+    </div>
+
+
+  </div>
+
+
+
+
+  <div class="row spacer-top-lg">
+
+    <div class="col-md-6">
       <figure>
         <figcaption>List Icons</figcaption>
-        <p>Use <code>fa-ul</code> and <code>fa-li</code> to easily replace default bullets in unordered lists.</p>
-        <ul class="fa-ul">
-          <li><i class="fa-li fa fa-check-square"></i>List icons</li>
-          <li><i class="fa-li fa fa-check-square"></i>can be used</li>
-          <li><i class="fa-li fa fa-spinner fa-spin"></i>as bullets</li>
-          <li><i class="fa-li fa fa-square"></i>in lists</li>
+        <p>Use <code>.nc-icon-ul</code> on your <code>ul</code> tag and <code>.nc-icon-mini</code> on each <code>li</code> to easily replace default bullets in unordered lists. You can also use text color classes from the Helpers section to quickly color icons.</p>
+        <ul class="nc-icon-ul">
+          <li><i class="nc-icon-mini ui-1_check-bold"></i>List icons</li>
+          <li><i class="nc-icon-mini ui-1_bold-remove"></i>can be used</li>
+          <li><i class="nc-icon-mini ui-1_bold-add text-green"></i>as bullets</li>
+          <li><i class="nc-icon-mini arrows-1_circle-right-37 text-info"></i>in lists</li>
         </ul>
       </figure>
+<div class="preview-code" hljs language="html"><ul class="nc-icon-ul">
+  <li><i class="nc-icon-mini ui-1_bold-add"></i>Bullets</li>
+</ul></div>
+
+<figure class="spacer-top-lg">
+  <figcaption>Stacked Icons</figcaption>
+  <p>You can add a circle or a square behind a given icon by adding the class <code>.circle</code> or <code>.square</code>. The default backround color is <code>#eee</code>, but you can override this with Helper classes.</p>
+  <p>
+    <i class="nc-icon-mini ui-1_bold-add circle bg-pb-yellow-300"></i>&nbsp;
+    <i class="nc-icon-mini ui-1_bold-add square bg-pb-medium-blue text-white"></i>
+  </p>
+  <p class="preview-code" hljs language="html"><i class="nc-icon-mini ui-1_bold-add circle bg-pb-yellow-300"></i>
+<i class="nc-icon-mini ui-1_bold-add square bg-pb-medium-blue text-white"></i></p>
+</figure>
     </div>
 
-    <div class="col-md-3">
+    <div class="col-md-6">
       <figure>
-        <figcaption>Stacked Icons</figcaption>
-        <p>To stack multiple icons, use the <code>fa-stack</code> class on the parent, the <code>fa-stack-1x</code> for the regularly sized icon, and <code>fa-stack-2x</code> for the larger icon. <code>fa-inverse</code> can be used as an alternative icon color. You can even throw larger icon classes on the parent to get further control of sizing.</p>
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-square-o fa-stack-2x"></i>
-          <i class="fa fa-cog fa-stack-1x text-info"></i>
-        </span> fa-cog on fa-square-o
-        <br>
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-circle fa-stack-2x text-success"></i>
-          <i class="fa fa-flag fa-stack-1x fa-inverse"></i>
-        </span> fa-flag on fa-circle
-        <br>
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-square fa-stack-2x"></i>
-          <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
-        </span> fa-terminal on fa-square
-        <br>
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-camera fa-stack-1x"></i>
-          <i class="fa fa-ban fa-stack-2x text-danger"></i>
-        </span> fa-ban on fa-camera
+        <figcaption>Rotated and Flipped Icons</figcaption>
+        <p>Use <code>.rotate-90</code>, <code>.rotate-180</code>, or <code>.rotate-270</code> to rotate icons.</p>
+
+        <p>
+          <i class="nc-icon-outline ui-1_bell-54 x2"></i>&nbsp;
+          <i class="nc-icon-outline ui-1_bell-54 x2 rotate-90"></i>&nbsp;
+          <i class="nc-icon-outline ui-1_bell-54 x2 rotate-180"></i>&nbsp;
+          <i class="nc-icon-outline ui-1_bell-54 x2 rotate-270"></i>
+        </p>
+        <p class="preview-code" hljs language="html">
+<i class="nc-icon-outline ui-1_bell-54 x2"></i>
+<i class="nc-icon-outline ui-1_bell-54 x2 rotate-90"></i>
+<i class="nc-icon-outline ui-1_bell-54 x2 rotate-180"></i>
+<i class="nc-icon-outline ui-1_bell-54 x2 rotate-270"></i></p>
+
+<p>You can also flip icons with the classes <code>.flip-x</code> and <code>.flip-y</code></p>
+<p><i class="nc-icon-outline ui-1_bookmark-add x3"></i>&nbsp;<i class="nc-icon-outline ui-1_bookmark-add x3 flip-x"></i>&nbsp;<i class="nc-icon-outline ui-1_bookmark-add x3 flip-y"></i></p>
+<div class="preview-code" hljs language="html">
+<i class="nc-icon-outline ui-1_bookmark-add x3"></i>
+<i class="nc-icon-outline ui-1_bookmark-add x3 flip-x"></i>
+<i class="nc-icon-outline ui-1_bookmark-add x3 flip-y"></i>
+</div>
+
       </figure>
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-md-8">
-      <div class="callout callout-danger">CSS3 animation only works in supported browsers.</div>
-    </div>
-  </div>
+
+
 
 </div>

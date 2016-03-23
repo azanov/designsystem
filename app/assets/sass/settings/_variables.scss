@@ -249,7 +249,7 @@ $input-border-radius-large: $border-radius-large;
 $input-border-radius-small: $border-radius-small;
 
 //** Placeholder text color
-$input-color-placeholder: $pb-light-gray;
+$input-color-placeholder: $pb-gray;
 
 //** Default `.form-control` height
 $input-height-base: ($line-height-computed + ($padding-base-vertical * 2) + 2);
@@ -323,6 +323,9 @@ $zindex-modal: 1050;
 //== Media queries breakpoints
 //
 //## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+//
+//## IMPORTANT NOTE: if you use the mixin breakpoint(screen-x) sizes below are not used!
+//## The sizes are defined in the mixin in _mixins.scss
 
 // Extra small screen / phone
 //** Deprecated `$screen-xs` as of v3.0.1
@@ -348,7 +351,7 @@ $screen-desktop: $screen-md-min;
 
 // Large screen / wide desktop
 //** Deprecated `$screen-lg` as of v3.0.1
-$screen-lg: 1200px;
+$screen-lg: 1300px;
 $screen-lg-min: $screen-lg;
 //** Deprecated `$screen-lg-desktop` as of v3.0.1
 $screen-lg-desktop: $screen-lg-min;

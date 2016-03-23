@@ -1,17 +1,13 @@
-// Definitions of typography settings.  For the variables, see
-
-
 .glyphicon {
   line-height: $line-height-base;
 }
-
-//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 
 // easily change something to serif or sans-serif
 .serif,
 .serif p {
   font-family: $font-family-serif;
 }
+
 .sans-serif,
 .sans,
 .sans-serif p,
@@ -19,6 +15,7 @@
   font-family: $font-family-sans-serif;
 }
 
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 code,
 .code,
 pre {

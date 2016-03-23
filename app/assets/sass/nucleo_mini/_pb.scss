@@ -1,0 +1,40 @@
+/*-----------------------------
+	PB Nucleo Mini font extras
+-------------------------------*/
+
+.#{$nc-css-prefix}-fw, .nc-fw {
+  width: (18em / 14);
+  text-align: center;
+}
+
+.nc-lg {
+  @extend .#{$nc-css-prefix}-mini.lg;
+}
+
+
+.#{$nc-css-prefix}-mini.x4 {
+  font-size: 4em;
+}
+
+.#{$nc-css-prefix}-mini.x5 {
+  font-size: 5em;
+}
+
+.#{$nc-css-prefix}-mini.x6 {
+  font-size: 6em;
+}
+
+.nc-spin {
+  animation: nc-spin 2s infinite linear;
+}
+
+
+@keyframes nc-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}

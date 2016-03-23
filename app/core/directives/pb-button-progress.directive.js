@@ -15,7 +15,7 @@
           scope.ngModel.defaultText = element.text();
 
           //set the default fa-icon
-          var icon = (scope.ngModel.iconClass) ? scope.ngModel.iconClass : scope.ngModel.iconClass = 'fa-circle-o-notch';
+          //var icon = (scope.ngModel.iconClass) ? scope.ngModel.iconClass : scope.ngModel.iconClass = 'loader_circle-04';
 
           //set the default speed
           var speed = (scope.ngModel.speed) ? scope.ngModel.speed : scope.ngModel.speed = 1.5;
@@ -25,10 +25,10 @@
             if (newVal) {
               element.addClass('loading');
               element.text(scope.ngModel.text);
-              element.prepend('<i class="fa ' + icon + ' fa-spin"></i>&nbsp;&nbsp;');
+              element.prepend('<i class="nc-icon-mini loader_circle-04 spin"></i>&nbsp;&nbsp;');
               element.find('i.fa').css({
-                '-webkit-animation': 'fa-spin ' + speed + 's infinite linear',
-                animation: 'fa-spin ' + speed + 's infinite linear'
+                '-webkit-animation': 'spin ' + speed + 's infinite linear',
+                animation: 'spin ' + speed + 's infinite linear'
               });
               element.prop('disabled', true);
             } else {

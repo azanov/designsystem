@@ -18,12 +18,15 @@
 @import "base/fonts";
 @import "base/pbfont";
 @import "base/typography";
+@import "nucleo_mini/nucleo-mini";
+@import "nucleo_outline/nucleo-outline";
 @import "base/helpers";
+@import "base/pb-nucleo-extras";
 
 // Legacy
 // Items removed from the DS but which we do not want to break if in use
 // ========================================
-@import 'legacy/miller-columns';
+// @import 'legacy/miller-columns';
 @import 'legacy/selectize';
 @import 'legacy/wizard';
 @import 'legacy/stepper';
@@ -82,4 +85,5 @@
 @import '../../modules/splitview/assets/sass/leftnav';
 @import '../../modules/splitview/assets/sass/splitview';
 @import '../../modules/hamburger/assets/sass/hamburger';
-@import '../../modules/errors/assets/sass/errors';
+@import '../../modules/resources/assets/sass/resources';
+@import '../../modules/elements/assets/sass/miller-columns';

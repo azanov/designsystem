@@ -1,0 +1,52 @@
+/*-----------------------------
+	PB Nucleo font extras
+-------------------------------*/
+
+.#{$nc-css-prefix}-mini.lg,
+.#{$nc-css-prefix}-outline.lg  {
+	font-size: 1.5em;
+}
+
+
+.#{$nc-css-prefix}-fw, .nc-fw {
+  width: (18em / 14);
+  text-align: center;
+}
+
+
+.#{$nc-css-prefix}-mini.x4,
+.#{$nc-css-prefix}-outline.x4  {
+  font-size: 4em;
+}
+
+.#{$nc-css-prefix}-mini.x5,
+.#{$nc-css-prefix}-outline.x5 {
+  font-size: 5em;
+}
+
+.#{$nc-css-prefix}-mini.x6,
+.#{$nc-css-prefix}-outline.x6  {
+  font-size: 6em;
+}
+
+.nc-spin {
+  animation: nc-spin 2s infinite linear;
+}
+
+@keyframes nc-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+
+.link-icon {
+	color: $pb-medium-blue;
+	&.disabled {
+		color: $pb-gray;
+	}
+}

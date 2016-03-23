@@ -6,6 +6,9 @@
     line-height: $line-height-base;
     height: 30px;
     font-size: 12px;
+    .nc-icon-mini {
+      font-size: 11px;
+    }
   }
 
   select {

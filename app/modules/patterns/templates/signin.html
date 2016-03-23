@@ -1,48 +1,48 @@
 <div class="signin-wrapper">
 
-  <div class="signin-body">
+  <div class="signin-body-top">
+    <div class="floating-unit">
+      
+      <a class="signin-pb-logo" href="http://www.pb.com"></a>
 
-    <a class="signin-pb-logo" href="http://www.pb.com"></a>
+      <!-- begin white box -->
+      <div class="signin-box">
+        <h1 class="signin-heading">Product Name<sup>&trade;</sup></h1>
 
-    <div class="signin-box">
+        <h5 class="signin-subheading">Product tag line</h5>
 
-      <h1 class="signin-heading">Product Name<sup>&trade;</sup></h1>
-      <h5 class="signin-subheading">Product tag line</h5>
+        <form autocomplete="off" name="myForm" class="spacer-top-md" novalidate>
+          <div class="form-group" ng-class="{'has-error': myForm.name.$error.required  && myForm.name.$dirty}">
+            <label for="name">Email</label>
+            <input class="form-control" name="name" required type="text">
+            <span class="help-block" ng-show="myForm.name.$error.required && myForm.name.$dirty">Enter a valid email address.</span>
+          </div>
+          <div class="form-group" ng-class="{'has-error': myForm.pwd.$error.required && myForm.pwd.$dirty}">
+            <label for="pwd">Password</label>
+            <input class="form-control" name="pwd" ng-model="myForm.data.pwd" required type="password">
+            <span class="help-block" ng-show="myForm.pwd.$error.required && myForm.pwd.$dirty">We don't recognize that email and password combination.</span>
+          </div>
 
-      <form autocomplete="off" name="myForm"  class="spacer-top-md" novalidate>
-        <div class="form-group" ng-class="{'has-error': myForm.name.$error.required  && myForm.name.$dirty}">
-          <label for="name">Email</label>
-          <input class="form-control" name="name" required type="text">
-          <span class="help-block" ng-show="myForm.name.$error.required && myForm.name.$dirty">Enter a valid email address.</span>
-        </div>
-        <div class="form-group" ng-class="{'has-error': myForm.pwd.$error.required && myForm.pwd.$dirty}">
-          <label for="pwd">Password</label>
-          <input class="form-control" name="pwd" ng-model="myForm.data.pwd" required type="password">
-          <span class="help-block" ng-show="myForm.pwd.$error.required && myForm.pwd.$dirty">We don't recognize that email and password combination.</span>
-        </div>
+          <label class="control checkbox">
+            <input type="checkbox">
+            <span class="control-indicator"></span>
+            Remember me
+          </label>
 
-        <label class="control checkbox">
-          <input type="checkbox">
-          <span class="control-indicator"></span>
-          Remember me
-        </label>
+          <button class="btn btn-primary btn-block btn-lg spacer-top-xs btn-pill" ng-click="login()" type="submit">Sign In</button>
+        </form>
 
-        <button class="btn btn-primary btn-block btn-lg spacer-top-xs btn-pill" ng-click="login()" type="submit">Sign In</button>
-      </form>
-
-      <p class="text-center spacer-top-md">Forgot your <a href="">password</a>?</p>
+        <p class="text-center spacer-top-md">
+          <a href="">Forgot your password?</a>
+        </p>
         <p class="text-center">Not a registered user?
           <a href="">Sign up now</a>
         </p>
-    </div>
-    <!-- // end white box -->
+      </div>
+      <!-- // end white box --></div>
 
   </div>
 
-  <div class="signin-footer">
-    Pitney Bowes Inc. the Corporate Logo and Product Name<sup>&trade;</sup> are trademarks of Pitney Bowes Inc. or a subsidiary. All other marks are the intellectual property of their respective owners. <a href="">Privacy</a>&nbsp;|&nbsp;<a href="">Terms and Conditions</a>&nbsp;<a>&copy; 2016 Pitney Bowes Inc. All rights reserved.</a>
-  </div>
-
-  </div>
+    <div ng-include="'modules/patterns/templates/includes/footer.html'"></div>
 
 </div>

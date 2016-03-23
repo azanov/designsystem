@@ -1,0 +1,148 @@
+@keyframes example {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+    animation-play-state: paused;
+  }
+}
+
+.drag-item {
+  padding: 10px;
+  border: 1px solid transparent;
+  transition: all 1s;
+
+  &:hover {
+    background-color: $pb-bg3;
+    cursor: pointer;
+  }
+
+  &:active {
+    cursor: grab;
+    background-color: $pb-bg5;
+  }
+
+  //the drop container
+  &.gu-transit {
+    background-color: $pb-bg3;
+    border: 1px dashed $pb-bg5;
+    opacity: 1;
+  }
+
+  //the dragged element
+  &.gu-mirror {
+    cursor: grabbing;
+    opacity: .8;
+    background-color: $pb-bg5;
+    //transition: all 0.4s ease-in-out;
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .5);
+    //transform: scale(1.5);
+  }
+}
+
+.dragging.gu-mirror {
+  animation-name: 'example';
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+/*
+ * note that styling gu-mirror directly is a bad practice because it's too generic.
+ * you're better off giving the draggable elements a unique class and styling that directly!
+ */
+
+
+// .ex-moved {
+//   background-color: #e74c3c;
+// }
+// .ex-over {
+//   background-color: rgba(255, 255, 255, 0.3);
+// }
+// .handle {
+//   padding: 0 5px;
+//   margin-right: 5px;
+//   background-color: rgba(0, 0, 0, 0.4);
+//   cursor: move;
+// }
+
+
+/* DOCUMENTATION TO BE MOVED */
+.table-dragdrop {
+  border: 0;
+  font-size: 11px;
+
+  thead tr.category th {
+    font-weight: bold;
+    color: #000;
+  }
+
+  thead tr th {
+    border: 0;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: transparent;
+  }
+
+  .column {
+    width: 200px;
+    vertical-align: top;
+  }
+
+  tbody tr td {
+    border-color: $pb-light-gray;
+
+    &.no-border {
+      border: 0;
+      vertical-align: middle;
+    }
+
+    &:empty {
+      background-color: #f2f2f2;
+    }
+  }
+}
+
+
+//svg arrows
+.cls-1, .cls-2 {
+  fill: none;
+  stroke: #662d91;
+  stroke-miterlimit: 10;
+  stroke-width: .75px;
+}
+.cls-2 {
+  stroke-dasharray: 2 2;
+}
+.cls-3, .cls-5 {
+  fill: #662d91;
+}
+.cls-4 {
+  fill: #fff;
+}
+.cls-5 {
+  font-size: 10px;
+  font-family: Helvetica;
+}
+
+// .cls-1a, .cls-2a {
+//   fill: none;
+//   stroke: #662d91;
+//   stroke-miterlimit: 10;
+//   stroke-width: .75px;
+// }
+// .cls-2a {
+//   stroke-dasharray: 2 2;
+// }
+// .cls-3a, .cls-5a {
+//   fill: #662d91;
+// }
+// .cls-4a {
+//   fill: #fff;
+// }
+// .cls-5a {
+//   font-size: 10px;
+//   font-family: Helvetica;
+// }

@@ -2,17 +2,17 @@
 // scss-lint:disable VendorPrefix
 ::-webkit-input-placeholder {
   font-family: $font-family-sans-serif;
-  color: #c1c1c1;
+  color: $input-color-placeholder !important;
 }
 
 ::-moz-placeholder {
   font-family: $font-family-sans-serif;
-  color: #c1c1c1;
+  color: $input-color-placeholder !important;
 }
 
 :-ms-input-placeholder {
   font-family: $font-family-sans-serif;
-  color: #c1c1c1;
+  color: $input-color-placeholder !important;
 }
 
 
@@ -152,18 +152,21 @@ a.list-group-item {
 
   &[disabled],
   fieldset[disabled] & {
-    background-color: $input-bg-disabled;
+    background-color: #f8f8f8;
     border-color: $input-border-disabled;
-    color: $input-color-disabled;
+    color: #454545;
     cursor: $cursor-disabled;
     opacity: 1; // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655
+    box-shadow: none;
   }
 
   &[readonly] {
-    background-color: lighten($input-bg-disabled, 3%);
-    border-color: lighten($input-border-disabled, 8%);
+    background-color: #f8f8f8;
+    border-color: $input-border-disabled;
     color: #4e4e4e;
     pointer-events: none;
+    box-shadow: none;
+
   }
 
 }

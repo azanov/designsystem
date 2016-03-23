@@ -45,6 +45,25 @@
       }
     })
 
+    .state('foundation.nucleo-mini', {
+      url: '/nucleo-mini',
+      templateUrl: 'modules/foundation/templates/foundation-nucleo-mini.html',
+      controller: 'TypographyController as type',
+      data: {
+        pageTitle: 'Foundation - Nucleo Mini'
+      }
+    })
+
+    .state('foundation.nucleo-outline', {
+      url: '/nucleo-outline',
+      templateUrl: 'modules/foundation/templates/foundation-nucleo-outline.html',
+      controller: 'TypographyController as type',
+      data: {
+        pageTitle: 'Foundation - Nucleo Outline'
+      }
+    })
+
+
     .state('foundation.iconography', {
       url: '/iconography',
       templateUrl: 'modules/foundation/templates/foundation-iconography.html',

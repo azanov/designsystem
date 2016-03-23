@@ -93,7 +93,7 @@
         }
       },
       data: {
-        pageTitle: 'Infinite Scroll',
+        pageTitle: 'Datatables.net',
         access: 'public',
         bodyClass: 'tables fullscreen'
       }

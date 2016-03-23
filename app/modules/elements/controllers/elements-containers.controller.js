@@ -82,48 +82,48 @@
           }
         ]
       }
-    }
+    };
 
     _this.itemGallery = {
       items: [
         {
           title: 'Self Assessment',
-          icon: 'fa-search',
+          icon: 'ui-1_zoom',
           description: 'Lorem ipsum dolor'
         },
         {
           title: 'Capital Gains Tax',
-          icon: 'fa-umbrella',
+          icon: 'objects_umbrella-13',
           description: 'Lorem ipsum dolor'
         },
         {
           title: 'Child Benefit',
-          icon: 'fa-wifi',
+          icon: 'tech_wifi',
           description: 'Lorem ipsum dolor'
         },
         {
           title: 'Corporation Tax',
-          icon: 'fa-user',
+          icon: 'users_single-04',
           description: 'Lorem ipsum dolor'
         },
         {
           title: 'Income Tax',
-          icon: 'fa-shopping-cart',
+          icon: 'shopping_cart',
           description: 'Lorem ipsum dolor'
         },
         {
           title: 'Inheritance Tax',
-          icon: 'fa-user',
+          icon: 'users_single-04',
           description: 'Lorem ipsum dolor'
         },
         {
           title: 'Premium Tax',
-          icon: 'fa-glass',
+          icon: 'food_drink',
           description: 'Lorem ipsum dolor'
         },
         {
           title: 'National Insurance',
-          icon: 'fa-tint',
+          icon: 'business_bank',
           description: 'Lorem ipsum dolor'
         }
       ],

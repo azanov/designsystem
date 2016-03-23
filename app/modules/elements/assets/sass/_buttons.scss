@@ -8,6 +8,11 @@
 // and all of the mixin is hard-coded below for each button type
 // Mazel Tov!
 
+a i.nc-icon-mini {
+  padding-right: 5px;
+  color: inherit;
+}
+
 .btn-primary {
   color: #fff;
   background-color: $pb-blue;

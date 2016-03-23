@@ -1,9 +1,11 @@
+
 //* -- THIS FILE CONTAINS STYLES FOR THE LIVE PREVIEW SITE ONLY!                         */
 //* -- THESE STYLES ARE NOT MEANT TO BE USED ON PROJECTS, ONLY USE THE DESIGN_SYSTEM.CSS */
 
 @import 'settings/variables';
 @import 'settings/mixins';
 @import 'base/helpers';
+@import 'nucleo_mini/demo';
 @import 'base/typography';
 
 
@@ -11,7 +13,7 @@
 
 
 // home page
-
+// scss-lint:disable MergeableSelector
 
 .home {
   // all hero divs
@@ -361,7 +363,7 @@ figcaption {
 
 
 .more-info {
-    background-color: #c0c0c0;
+    background-color: $pb-gray-300;
     padding: 5px 15px;
     border-radius: 20px;
     font-family: $font-family-monospace;
@@ -380,8 +382,8 @@ figcaption {
 
     &.plugin {
       &:before {
-        font-family: FontAwesome;
-        content: '\f1e6';
+        font-family: 'Nucleo Mini';
+        content: '\ee37';
         padding-right: 7px;
       }
     }
@@ -682,6 +684,18 @@ h2.table-header.specifications {
   }
 }
 
+.pb-icons {
+  li {
+    font-family: $font-family-monospace;
+
+  }
+  i {
+    font-size: 30px;
+    padding: 5px;
+    display: inline-block;
+  }
+}
+
 //* experimental block grid code, will not work in IE8
 // used to display icons on icons page
 [class*='block-grid-'] {
@@ -802,17 +816,18 @@ h2.table-header.specifications {
   margin-right: 3px;
 }
 
-.panel-download {
+.resources {
 
-  .illustrator {
-    background-color: #DA1F26;
-
-    svg {
-      max-height: 80px;
-    }
+  h2 {
+    margin-top: 20px;
   }
-
-  .panel-body {
+  .panel-download {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 0;
+    color: #fff;
+    text-align: center;
     min-height: 425px;
     transition: all .3s ease-in-out;
 
@@ -821,23 +836,37 @@ h2.table-header.specifications {
         margin-bottom: 8px;
       }
     }
+    a {
+      color: #fff;
+      font-weight: 200;
+
+      &:hover {
+        color: #fff;
+        //text-decoration: none;
+      }
+    }
 
     &:hover {
       box-shadow: 0 11px 20px -5px rgba(0, 0, 0, .5);
       transition: all .3s ease-in-out;
     }
 
-  }
+    &.illustrator {
+      background-color: #DA1F26;
 
-  a {
-    color: #fff;
-    font-weight: 200;
+      svg {
+        max-height: 80px;
+      }
 
-    &:hover {
-      color: #fff;
-      //text-decoration: none;
-    }
   }
+}
+
+
+
+
+
+
+
 
   hr {
     width: 50%;
@@ -880,6 +909,42 @@ figure .modal-dialog {
     &.active {
       border-color: $pb-blue;
       box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .1);
+    }
+  }
+}
+
+
+#cd-main-nav {
+  list-style: none;
+  column-count: 5;
+  margin-top: 20px;
+  margin-left: 0;
+  padding-left: 0;
+  @include breakpoint(screen-xs) {
+    column-count: 2;
+    li {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+ul.icon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+  li {
+    width: 180px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 12px;
+    i {
+      padding-bottom: 10px;
+    }
+    @include breakpoint(screen-xs) {
+      width: 150px;
+      font-size: 11px;
+      margin-right: 20px;
     }
   }
 

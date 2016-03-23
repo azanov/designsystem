@@ -1,3 +1,5 @@
+// scss-lint:disable SpaceAfterPropertyColon
+
 // for vertical spacing, add to elements
 $spacers: (xs: 10px,sm: 20px, md: 30px, lg: 40px, xl: 50px);
 $directions: (top, bottom);
@@ -64,7 +66,9 @@ $directions: (top, bottom);
 
 // color classes, first foreground
 .white                 { color            : #fff; }
+.text-white            { color            : #fff; }
 .bk                    { color            : #000;}
+.text-black            { color            : #000;}
 .text-bg1              { color            : $pb-bg1;}
 .text-bg2              { color            : $pb-bg2;}
 .text-bg3              { color            : $pb-bg3;}
@@ -87,7 +91,7 @@ $directions: (top, bottom);
 .text-dark-orange-500  { color            : $pb-dark-orange-500;}
 .text-dark-orange-700  { color            : $pb-dark-orange-700;}
 .text-danger           { color            : $brand-danger;}
-.text-error            {color             : $brand-danger;}
+.text-error            { color            : $brand-danger;}
 .text-gray             { color            : $pb-gray;}
 .text-gray-50          { color            : $pb-light-gray;}
 .text-gray-300         { color            : $pb-gray-300;}
@@ -121,9 +125,10 @@ $directions: (top, bottom);
 .text-yellow-700       { color            : $pb-yellow-700;}
 
 // then background-color
-.bg-header-color       {background-color  : $header-color;}
-.bg-header-color-alt   {background-color  : $header-color-alt;}
+.bg-header-color       { background-color : $header-color;}
+.bg-header-color-alt   { background-color : $header-color-alt;}
 .bg-white              { background-color : #fff; }
+.bg-black              { background-color : #000; }
 .bg-pb-bg1             { background-color : $pb-bg1;}
 .bg-pb-bg2             { background-color : $pb-bg2;}
 .bg-pb-bg3             { background-color : $pb-bg3;}
@@ -181,11 +186,12 @@ $directions: (top, bottom);
 
 
 //contextual backgrounds
-.bg-primary      { background-color :$pb-blue;}
-.bg-success      { background-color :$state-success-bg;}
-.bg-danger      { background-color :$state-danger-bg;}
-.bg-warning      { background-color :$state-warning-bg;}
+.bg-primary   { background-color :$pb-blue;}
+.bg-success   { background-color :$state-success-bg;}
+.bg-danger    { background-color :$state-danger-bg;}
+.bg-warning   { background-color :$state-warning-bg;}
 .bg-info      { background-color :$state-info-bg;}
+
 
 // fill classes for svg
 .fill-white            { fill            : #fff; }
@@ -212,7 +218,7 @@ $directions: (top, bottom);
 .fill-dark-orange-500  { fill            : $pb-dark-orange-500;}
 .fill-dark-orange-700  { fill            : $pb-dark-orange-700;}
 .fill-danger           { fill            : $brand-danger;}
-.fill-error            {fill             : $brand-danger;}
+.fill-error            { fill             : $brand-danger;}
 .fill-gray             { fill            : $pb-gray;}
 .fill-gray-50          { fill            : $pb-light-gray;}
 .fill-gray-300         { fill            : $pb-gray-300;}
