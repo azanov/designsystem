@@ -8,7 +8,8 @@
   margin-top: 50px; // height of navbar
   position: relative;
   @include breakpoint(screen-xs) {
-    height: 150px;
+    height: 120px;
+    margin-top: 0;
   }
   .hero-header {
     margin-top: 115px;

@@ -2,7 +2,7 @@
 
 .fullscreen {
 
-  header, #header,
+  header:not(.demo), #header,
   footer, #footer {
     display: none;
   }

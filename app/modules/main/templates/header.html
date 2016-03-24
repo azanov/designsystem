@@ -1,145 +1,149 @@
+<div class="navbar yamm navbar-default custom-navbar" role="navigation">
+  <div class="container">
 
-  <div class="navbar yamm navbar-default custom-navbar" role="navigation">
-    <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand brand-text" href="#/">Design System</a>
+    </div>
 
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand brand-text" href="#/">Design System</a>
-      </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="main-navbar">
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical hidden-xs"></li>
+        <li>
+          <a href="" ui-sref="principles.page">Principles</a>
+        </li>
 
-        <ul class="nav navbar-nav">
-          <li class="divider-vertical hidden-xs"></li>
-          <li>
-            <a href="" ui-sref="principles.page">Principles</a>
-          </li>
-
-          <!-- mega1 -->
-          <li class="dropdown yamm-fw hidden-xs">
-            <a href="" class="dropdown-toggle" data-target="" data-toggle="dropdown">Web</a>
-            <ul class="dropdown-menu pb-animate-menu">
-              <li>
-                <div class="yamm-content container">
-                  <div class="row">
-                    <div class="col-xs-12">
-                      <!-- this row is just so i can do the offset -->
-                      <div class="row">
+        <!-- mega1 -->
+        <li class="dropdown yamm-fw hidden-xs">
+          <a href="" class="dropdown-toggle" data-target="" data-toggle="dropdown">Web</a>
+          <ul class="dropdown-menu pb-animate-menu">
+            <li>
+              <div class="yamm-content container">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <!-- this row is just so i can do the offset -->
+                    <div class="row">
                       <div class="col-md-6  mega-offset">
 
-                      <div class="row">
-                        <div class="col-xs-4" ng-repeat="category in header.nav[1].Web[0].children[0].children">
-                          <p class="section-head">{{category.label}}</p>
+                        <div class="row">
+                          <div class="col-xs-4" ng-repeat="category in header.nav[1].Web[0].children[0].children">
+                            <p class="section-head">{{category.label}}</p>
 
-                          <ul class="list-unstyled menu-items">
+                            <ul class="list-unstyled menu-items">
 
-                            <!-- if no sub items-->
-                            <li ng-if="!item.children" ng-repeat="item in category.children">
-                              <a href="" ui-sref="{{item.value}}">{{item.label}}</a>
-                            </li>
-
-                            <!-- if sub items -->
-                            <span ng-if="item.children" ng-repeat="item in category.children">
-                              <li ng-repeat="item in item.children">
-                                <a href="" ui-sref="{{item.value}}" >{{item.label}}</a>
+                              <!-- if no sub items-->
+                              <li ng-if="!item.children" ng-repeat="item in category.children">
+                                <a href="" ui-sref="{{item.value}}">{{item.label}}</a>
                               </li>
-                            </span>
-                          </ul>
+
+                              <!-- if sub items -->
+                              <span ng-if="item.children" ng-repeat="item in category.children">
+                                <li ng-repeat="item in item.children">
+                                  <a href="" ui-sref="{{item.value}}">{{item.label}}</a>
+                                </li>
+                              </span>
+                            </ul>
+                          </div>
                         </div>
                       </div>
-
-
-                    </div>
-                    </div>
-
-
-
                     </div>
                   </div>
                 </div>
-              </li>
-            </ul>
-          </li>
+              </div>
+            </li>
+          </ul>
+        </li>
 
-          <!-- mega 2 -->
-          <li class="dropdown yamm-fw hidden-xs">
-            <a href="" class="dropdown-toggle" data-target="" data-toggle="dropdown">Mobile</a>
-            <ul class="dropdown-menu pb-animate-menu">
-              <li>
-                <div class="yamm-content container">
-                  <div class="row">
-                    <div class="col-xs-12">
-                      <!-- this row is just so i can do the offset -->
-                      <div class="row">
+        <!-- mega 2 -->
+        <li class="dropdown yamm-fw hidden-xs">
+          <a href="" class="dropdown-toggle" data-target="" data-toggle="dropdown">Mobile</a>
+          <ul class="dropdown-menu pb-animate-menu">
+            <li>
+              <div class="yamm-content container">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <!-- this row is just so i can do the offset -->
+                    <div class="row">
                       <div class="col-md-6  mega-offset">
 
-                      <div class="row">
-                        <div class="col-xs-4" ng-repeat="category in header.nav[2].Mobile[0].children[0].children">
-                          <p class="section-head">{{category.label}}</p>
+                        <div class="row">
+                          <div class="col-xs-4" ng-repeat="category in header.nav[2].Mobile[0].children[0].children">
+                            <p class="section-head">{{category.label}}</p>
 
-                          <ul class="list-unstyled menu-items">
+                            <ul class="list-unstyled menu-items">
 
-                            <!-- if no sub items-->
-                            <li ng-if="!item.children" ng-repeat="item in category.children">
-                              <a href="" ui-sref="{{item.value}}">{{item.label}}</a>
-                            </li>
-
-                            <!-- if sub items -->
-                            <span ng-if="item.children" ng-repeat="item in category.children">
-                              <li ng-repeat="item in item.children">
-                                <a href="" ui-sref="{{item.value}}" >{{item.label}}</a>
+                              <!-- if no sub items-->
+                              <li ng-if="!item.children" ng-repeat="item in category.children">
+                                <a href="" ui-sref="{{item.value}}">{{item.label}}</a>
                               </li>
-                            </span>
-                          </ul>
+
+                              <!-- if sub items -->
+                              <span ng-if="item.children" ng-repeat="item in category.children">
+                                <li ng-repeat="item in item.children">
+                                  <a href="" ui-sref="{{item.value}}">{{item.label}}</a>
+                                </li>
+                              </span>
+                            </ul>
+                          </div>
                         </div>
                       </div>
-
-
-                    </div>
-                    </div>
-
-
-
                     </div>
                   </div>
                 </div>
-              </li>
-            </ul>
-          </li>
+              </div>
+            </li>
+          </ul>
+        </li>
 
-          <!-- these 2 items only on phones -->
-          <li class="visible-xs-block"><a href="" ui-sref="weblanding">Web</a></li>
-          <li class="visible-xs-block"><a href="" ui-sref="mobilelanding">Mobile</a></li>
+        <!-- these 2 items only on phones -->
+        <li class="visible-xs-block">
+          <a href="" ui-sref="weblanding">Web</a>
+        </li>
+        <li class="visible-xs-block">
+          <a href="" ui-sref="mobilelanding">Mobile</a>
+        </li>
 
-          <li><a href="" ui-sref="content.page">Content</a></li>
-          
-          <li><a href="" ui-sref="globalization.page">Globalization</a></li>
+        <li>
+          <a href="" ui-sref="content.page">Content</a>
+        </li>
+        <li>
+          <a href="" ui-sref="globalization.page">Globalization</a>
+        </li>
 
-          <li class="dropdown">
-             <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
-             <ul class="dropdown-menu pb-animate-menu">
-               <li><a href="" ui-sref="resources.strategy">Strategy</a></li>
-               <li><a href="" ui-sref="resources.tools">Tools</a></li>
-               <li><a href="" ui-sref="resources.gallery">Gallery</a></li>
-               <li><a href="" ui-sref="resources.roadmap">Roadmap</a></li>
-             </ul>
-         </li>
-          <!-- end "real" menus -->
+        <li class="dropdown">
+          <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
+          <ul class="dropdown-menu pb-animate-menu">
+            <li>
+              <a href="" ui-sref="resources.strategy">Strategy</a>
+            </li>
+            <li>
+              <a href="" ui-sref="resources.tools">Tools</a>
+            </li>
+            <li>
+              <a href="" ui-sref="resources.gallery">Gallery</a>
+            </li>
+            <li>
+              <a href="" ui-sref="resources.roadmap">Roadmap</a>
+            </li>
+          </ul>
+        </li>
+        <!-- end left menus -->
 
-        </ul>
+      </ul>
+      <!-- end navbar-nav left -->
 
-
-        <ul class="nav navbar-nav navbar-right">
-        </ul>
-
-      </div> <!-- /.navbar-collapse -->
 
     </div>
+    <!-- /navbar-collapse -->
   </div>
+  <!-- /container -->
+</div>
+<!-- /navbar -->

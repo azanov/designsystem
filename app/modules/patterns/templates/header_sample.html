@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en" class="no-js" xmlns:ng="http://angularjs.org" ng-app="app" ng-cloak>
+  <head>
+    <meta charset="utf-8">
+    <title>Design System - Sample Responsive Header</title>
+    <meta name="google" value="notranslate">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../assets/css/design_system.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../assets/css/documentation.css">
+
+  </head>
+
+  <body ng-controller="AppController as app" class="site header-sample">
+
+    <header class="demo">
+      <div class="navbar yamm navbar-default custom-navbar" role="navigation">
+        <div class="container">
+
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand brand-text" href="#/">Product Name</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="main-navbar">
+
+            <ul class="nav navbar-nav">
+              <li class="divider-vertical hidden-xs"></li>
+              <li>
+                <a href="" ui-sref="principles.page">Item 1</a>
+              </li>
+              <li>
+                <a href="" ui-sref="principles.page">Item 2</a>
+              </li>
+
+              <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu 1</a>
+                <ul class="dropdown-menu pb-animate-menu">
+                  <li>
+                    <a href="">Item 1</a>
+                  </li>
+                  <li>
+                    <a href="">Item 2</a>
+                  </li>
+                  <li>
+                    <a href="">Item 3</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- end left menus -->
+
+            </ul>
+            <!-- end navbar-nav left -->
+
+            <ul class="nav navbar-nav navbar-right">
+
+              <li class="divider-vertical hidden-xs"></li>
+
+              <!-- Search menu -->
+              <!-- <li class="menu-search"><a href="" class="dropdown-toggle" data-toggle="dropdown">
+              <svg width="24" height="24" viewBox="0 0 24 24" ><use xlink:href="#svgSearch" x="0" y="0" /></svg>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <input type="text" name=""  class="form-control" placeholder="Search">
+              </li>
+
+            </ul>
+          </li> -->
+
+              <!-- Apps menu -->
+              <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                  <svg class="hidden-xs" width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#svgApps" x="0" y="0"/></svg>
+                  <span class="visible-xs-inline">
+                    <i class="nc-icon-mini ui-2_grid-48"></i>Applications</span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="section-head">Your Apps</li>
+                  <li>
+                    <a href="" class="disabled">Product</a>
+                  </li>
+                  <li>
+                    <a href="">App 2</a>
+                  </li>
+                  <li>
+                    <a href="">App 3</a>
+                  </li>
+                  <li>
+                    <a href="">App 4</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Reminders -->
+              <!-- <li>
+          <a href="" class="bell">
+            <svg class="hidden-xs" width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#svgBell" x="0" y="0"/></svg>
+            <span class="visible-xs-inline">
+              <i class="nc-icon-mini ui-1_bell-53"></i>Notifications</span>
+
+            <span class="badge">14</span>
+          </a>
+        </li> -->
+
+              <!-- Help menu -->
+              <li class="dropdown menu-help">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                  <svg class="hidden-xs" width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#svgHelp" x="0" y="0"/></svg>
+                  <span class="visible-xs-inline">
+                    <i class="nc-icon-mini ui-2_alert-circle"></i>Help</span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="section-head hidden-xs">Help</li>
+                  <li class="input-group">
+                    <input type="text" name="" id="" class="form-control" placeholder="Search">
+                  </li>
+                  <li>
+                    <a href="">Help</a>
+                  </li>
+                  <li>
+                    <a href="">Add Carrier Accounts</a>
+                  </li>
+                  <li>
+                    <a href="">See All Help Topics</a>
+                  </li>
+                  <li role="separator" class="divider"></li>
+                  <li>
+                    <a href="" ng-class="{disabled : patterns.offline}" popover-trigger="mouseenter" uib-popover="{{patterns.chatOfflineMessage}}" popover-placement="left">
+                      <i class="nc-icon-mini ui-2_chat-round-content"></i>
+                      Chat
+                      <span ng-if="patterns.offline">Offline</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="nc-icon-mini ui-1_email-84"></i>
+                      Email</a>
+                  </li>
+                  <li>
+                    <a href="tel:1-800-555-45678" ng-class="{disabled : patterns.offline}" popover-trigger="mouseenter" uib-popover="{{patterns.phoneOfflineMessage}}" popover-placement="left">
+                      <i class="nc-icon-mini ui-2_phone"></i>
+                      1-800-555-45678</a>
+                  </li>
+                  <li role="separator" class="divider"></li>
+                  <li>
+                    <a href="">
+                      <i class="nc-icon-mini arrows-2_square-download"></i>
+                      Printer/Scale Drivers</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Settings menu -->
+              <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                  <svg class="hidden-xs" width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#svgSettings" x="0" y="0"/></svg>
+                  <span class="visible-xs-inline">
+                    <i class="nc-icon-mini ui-1_settings-gear-63"></i>Settings</span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="section-head">Application Settings</li>
+                  <li>
+                    <a href="">Carriers</a>
+                  </li>
+                  <li>
+                    <a href="">Cost Accounts</a>
+                  </li>
+                  <li>
+                    <a href="">Postage Payment Methods</a>
+                  </li>
+                  <li>
+                    <a href="">Users</a>
+                  </li>
+                  <li class="section-head">Personal Preferences</li>
+                  <li>
+                    <a href="">Label Options</a>
+                  </li>
+                  <li>
+                    <a href="">Automatic Emails</a>
+                  </li>
+                  <li>
+                    <a href="">Presets</a>
+                  </li>
+                  <li>
+                    <a href="">Return Label</a>
+                  </li>
+                  <li>
+                    <a href="">Preferences</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- User menu -->
+              <li class="dropdown menu-user">
+                <a href="" class="dropdown-toggle face" data-toggle="dropdown">
+                  <svg class="hidden-lg hidden-xs" width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#svgUserInitials" x="0" y="0"/></svg>
+                  <!-- <img src="modules/patterns/assets/images/128.jpg" alt="User Image"> -->
+                  <span class="visible-lg">Roberta Hamilton</span>
+                  <span class="visible-xs-inline"><i class="nc-icon-mini users_circle-10"></i>Roberta Hamilton</span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li>
+                    <a href="">Profile<br>
+                      <span class="menu-text-small">Email, Passwords</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">Your Account<br>
+                      <span class="menu-text-small">Financials, Usage, Products, Support</span>
+                    </a>
+                  </li>
+                  <li role="separator" class="divider"></li>
+                  <li>
+                    <a href="">Sign Out</a>
+                  </li>
+                </ul>
+              </li>
+
+            </ul>
+            <!--/navbar-right -->
+          </div>
+          <!-- /navbar-collapse -->
+        </div>
+        <!-- /container -->
+      </div>
+      <!-- /navbar -->
+    </header>
+
+    <svg style="display:none;">
+      <defs>
+
+        <g id="svgHelp" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M11 1c5.523 0 10 4.477 10 10s-4.477 10-10 10-10-4.477-10-10 4.477-10 10-10z"/><path d="M10.811 12.818v-.909c1.463 0 2.727-1.265 2.727-2.727 0-1.463-1.265-2.727-2.727-2.727-1.085 0-2.129.812-2.538 1.746"/><path d="M11 15.545v.909"/></g>
+
+        <g id="svgSettings" stroke-linecap="round" stroke="#fff" stroke-width="1.5" fill="none"><path d="M21 12.818v-3.636h-2.965c-.172-.665-.434-1.293-.775-1.871l2.096-2.096-2.571-2.571-2.096 2.096c-.578-.341-1.205-.603-1.871-.775v-2.965h-3.636v2.965c-.665.172-1.293.434-1.871.775l-2.096-2.096-2.571 2.571 2.096 2.096c-.341.578-.603 1.205-.775 1.871h-2.965v3.636h2.965c.172.665.434 1.293.775 1.871l-2.096 2.096 2.571 2.571 2.096-2.096c.578.341 1.205.603 1.871.775v2.965h3.636v-2.965c.665-.172 1.293-.434 1.871-.775l2.096 2.096 2.571-2.571-2.096-2.096c.341-.578.603-1.205.775-1.871h2.965z"/><path d="M8.273 11c0-1.506 1.221-2.727 2.727-2.727 1.506 0 2.727 1.221 2.727 2.727 0 1.506-1.221 2.727-2.727 2.727-1.506 0-2.727-1.221-2.727-2.727z"/></g>
+
+        <g id="svgApps" stroke-linecap="round" stroke="#fff" stroke-width="1.5" fill="none"><path d="M4.637 4.455h-3.455v-3.455h3.455v3.455z"/><path d="M4.637 12.227h-3.455v-3.455h3.455v3.455z"/><path d="M4.637 20h-3.455v-3.455h3.455v3.455z"/><path d="M12.409 4.455h-3.455v-3.455h3.455v3.455z"/><path d="M12.409 12.227h-3.455v-3.455h3.455v3.455z"/><path d="M12.409 20h-3.455v-3.455h3.455v3.455z"/><path d="M20.182 4.455h-3.455v-3.455h3.455v3.455z"/><path d="M20.182 12.227h-3.455v-3.455h3.455v3.455z"/><path d="M20.182 20h-3.455v-3.455h3.455v3.455z"/></g>
+
+        <g id="svgSearch" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M22 22l-5.636-5.636"/><path d="M1 10c0-4.971 4.029-9 9-9s9 4.029 9 9-4.029 9-9 9-9-4.029-9-9z"/></g>
+
+        <g id="svgUserInitials" fill="none"><path d="M1 12c0-6.075 4.925-11 11-11s11 4.925 11 11-4.925 11-11 11-11-4.925-11-11z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <text font-family="sans-serif" font-size="12" font-weight="normal" sketch:alignment="middle" fill="#fff" transform="translate(-2 1)">
+            <tspan x="4.784" y="15">RH</tspan>
+          </text>
+        </g>
+
+        <g id="svgBell" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M7.374 18.165l-.011.107c0 1.506 1.221 2.727 2.727 2.727 1.506 0 2.727-1.221 2.727-2.727l-.011-.107"/><path d="M16.455 10.091v-2.727c0-3.55-2.814-6.364-6.364-6.364s-6.364 2.814-6.364 6.364v2.727c0 3.03-2.727 3.744-2.727 5.455 0 1.522 3.513 2.727 9.091 2.727 5.578 0 9.091-1.205 9.091-2.727 0-1.711-2.727-2.425-2.727-5.455z"/></g>
+
+      </defs>
+    </svg>
+
+    <script src="http://code.jquery.com/jquery-1.12.2.js" integrity="sha256-VUCyr0ZXB5VhBibo2DkTVhdspjmxUgxDGaLQx7qb7xY=" crossorigin="anonymous"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

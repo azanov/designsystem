@@ -78,12 +78,10 @@ gulp.task('usemin', function() {
   gulp.src('./app/index.html')
     .pipe(usemin({
       css: [
-        cssnano,
-        rev
+        cssnano
       ],
       vendorjs: [
-        uglify({mangle: true}),
-        rev
+        uglify({mangle: true})
       ],
       appjs: [
         replace('debug: true', 'debug: false'),

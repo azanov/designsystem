@@ -818,18 +818,35 @@ h2.table-header.specifications {
 
 .resources {
 
-  h2 {
-    margin-top: 20px;
-  }
+
   .panel-download {
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
     border: 0;
     color: #fff;
     text-align: center;
     min-height: 425px;
     transition: all .3s ease-in-out;
+    h2 {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+    .panel-content {
+      margin-top: 60px;
+
+    }
+
+    &.bg-pb-gray-500 {
+      .panel-content {
+          margin-top: 40px;
+      }
+    }
+
+    .icon {
+      height: 72px;
+    }
 
     ul {
       li {
@@ -853,11 +870,6 @@ h2.table-header.specifications {
 
     &.illustrator {
       background-color: #DA1F26;
-
-      svg {
-        max-height: 80px;
-      }
-
   }
 }
 
@@ -952,4 +964,9 @@ ul.icon-grid {
 
 .outlined, .bordered {
   border: 1px solid #e1e1e1;
+}
+
+
+.header-sample {
+  background-color: $pb-gray-300;
 }
