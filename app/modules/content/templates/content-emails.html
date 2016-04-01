@@ -1,0 +1,89 @@
+<div class="doc-hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="hero-header">
+          <div class="eyebrow">Content</div>
+          <h1>Emails</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div headroom class="sub-header jump-bar headroom" tolerance="5" offset="240" classes="{'initial':'','pinned':'','unpinned':'','top':'headroom-top','notTop':'headroom-not-top'}">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list-unstyled list-inline jump-menu">
+            <li>
+              <a ui-sref="content.emails({'#':'template'})">Template</a>
+            </li>
+            <li>
+              <a ui-sref="content.emails({'#':'scenarios'})">Scenarios</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-8">
+      <h1 id="template" class="doc-head">Sample Email Template</h1>
+      <p class="doc-lede">A generic template used for transactional emails within products.</p>
+    </div>
+  </div>
+
+  <div class="row spacer-top-lg">
+    <div class="col-md-8">
+      <p>
+        The scenarios outlined below can be used as a guidline for copy within the email template. Be sure to make the following changes in the copy:
+      </p>
+      <ul>
+        <li>
+          Replace all occurances of bracketed content, such as
+          <code>[[PRODUCT NAME]]</code>
+          with the appropriate copy and links.
+        </li>
+        <li>
+          Pay attention to indications of register and trademarks.
+        </li>
+        <li>Refer to the Global support copy options at the end of this document, replacing all occurances of
+          <code>[[GLOBAL SUPPORT COPY OPTION]]</code>
+          with your selected option.</li>
+      </ul>
+      <p><a href="https://litmus.com/pub/15299f8" target="_blank">View sample email in an assortment of email clients.</a></p>
+    </div>
+
+  </div>
+
+  <div class="row spacer-top-lg">
+    <div class="col-md-6">
+      <img class="img-responsive framed spacer-bottom-md" src="modules/content/assets/images/email-google.jpg" alt=""/>
+    </div>
+    <div class="col-md-3 col-md-offset-1 col-xs-6">
+      <img class="img-responsive spacer-bottom-md" src="modules/content/assets/images/email-iphone6splus.jpg" alt=""/>
+    </div>
+  </div>
+
+
+
+</div>
+<div class="container-fluid spacer-top-lg">
+  <div class="row spacer-bottom-md">
+    <div class="col-md-8">
+      <h1 id="scenarios" class="doc-head">Scenarios</h1>
+      <!-- <p class="doc-lede">A generic template used for transactional emails within products.</p> -->
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div ng-include="'modules/content/templates/includes/email-matrix.html'"></div>
+    </div>
+  </div>
+</div>

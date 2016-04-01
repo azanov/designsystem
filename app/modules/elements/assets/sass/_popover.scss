@@ -1,10 +1,9 @@
 // popover
 .popover {
-  -webkit-box-shadow: none;
-  -moz-box-shadow   : none;
   box-shadow        : none;
   border-radius     : 0;
   background-color  : #fff;
+  z-index: 3;
   &.bottom .arrow:after {
     border-bottom-color: #fff;
   }

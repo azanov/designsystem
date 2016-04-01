@@ -1,0 +1,19 @@
+table.email-matrix {
+  td {
+    padding: 5px;
+  }
+  th {
+    width: 120px;
+  }
+
+  td[colspan='8'] {
+    text-align: center;
+  }
+  td[colspan='9'], tr td:first-child {
+    background-color: #f8f8f8;
+    font-family: 'PrecisionSans_W_Rg', 'Helvetica Neue', Arial, sans-serif;
+    color: #4e4e4e;
+    font-weight: normal;
+    border-bottom: 1px solid #c5cbe3;
+  }
+}

@@ -33,7 +33,9 @@
     'ui.select',
     'ngTagsInput',
     'slickCarousel',
+    'ngFileUpload',
     'iso'
+    angularDragula(angular)
   ]);
 
 })();

@@ -63,6 +63,7 @@ $pb-gray-300:            #9b9b9b; // field borders, icons
 $pb-gray:                #c0c0c0; // disabled
 $pb-light-gray:          #e1e1e1; //section dividers, tab borders
 $pb-gray-50:             $pb-light-gray;
+$pb-gray-100:            $pb-gray;
 
 //Neutral Light Color Palette
 $pb-bg1:                 #f0f0f0; //footers
@@ -70,6 +71,13 @@ $pb-bg2:                 #f8f8f8; //containers, backgrounds
 $pb-bg3:                 #eaedf8; //row hover states
 $pb-bg4:                 #d8dbf1; //summary tables, vertical dividers
 $pb-bg5:                 #c5cbe3; //data cell borders
+
+$pb-bg-100: $pb-bg1;
+$pb-bg-200: $pb-bg2;
+$pb-bg-300: $pb-bg3;
+$pb-bg-400: $pb-bg4;
+$pb-bg-500: $pb-bg5;
+$pb-bg-700: $pb-gray-700;
 
 $pb-error-red:           #dc0000;
 
@@ -314,7 +322,7 @@ $dropdown-caret-color: #000;
 
 $zindex-navbar: 1000;
 $zindex-dropdown: 1000;
-$zindex-popover: 1060;
+$zindex-popover: 3;
 $zindex-tooltip: 1070;
 $zindex-navbar-fixed: 1030;
 $zindex-modal-background: 1040;

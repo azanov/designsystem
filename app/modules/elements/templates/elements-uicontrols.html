@@ -1121,9 +1121,11 @@
           <figure>
             <figcaption>Single Date Picker</figcaption>
             <div class="input-group">
-              <input class="form-control" date-range-picker ng-model="inputs.singlepicker.date" options="inputs.singlepicker.options" type="text"/>
-              <span class="input-group-addon">
-                <i class="nc-icon-mini nc-fw ui-1_calendar-57"></i>
+              <input class="form-control" id="picker1" date-range-picker ng-model="inputs.singlepicker.date" options="inputs.singlepicker.options" type="text"/>
+              <span class="input-group-btn">
+                <button class="btn btn-default" ng-click="inputs.openPicker('picker1')">
+                  <i class="nc-icon-mini nc-fw ui-1_calendar-57"></i>
+                </button>
               </span>
             </div>
           </figure>
@@ -1135,9 +1137,11 @@
           <figure>
             <figcaption>Date Range Picker</figcaption>
             <div class="input-group">
-              <input class="form-control" date-range-picker ng-model="inputs.daterangepicker.date" options="inputs.daterangepicker.options" type="text"/>
-              <span class="input-group-addon">
-                <i class="nc-icon-mini nc-fw ui-1_calendar-57"></i>
+              <input class="form-control" id="picker2" date-range-picker ng-model="inputs.daterangepicker.date" options="inputs.daterangepicker.options" type="text"/>
+              <span class="input-group-btn">
+                <button class="btn btn-default" ng-click="inputs.openPicker('picker2')">
+                  <i class="nc-icon-mini nc-fw ui-1_calendar-57"></i>
+                </button>
               </span>
             </div>
           </figure>
@@ -1149,9 +1153,11 @@
           <figure>
             <figcaption>Date Range Picker with Auto Apply Option</figcaption>
             <div class="input-group">
-              <input class="form-control" date-range-picker ng-model="inputs.daterangepicker2.date" options="inputs.daterangepicker2.options" type="text"/>
-              <span class="input-group-addon">
-                <i class="nc-icon-mini nc-fw ui-1_calendar-57"></i>
+              <input class="form-control" id="picker3" date-range-picker ng-model="inputs.daterangepicker2.date" options="inputs.daterangepicker2.options" type="text"/>
+              <span class="input-group-btn">
+                <button class="btn btn-default" ng-click="inputs.openPicker('picker3')">
+                  <i class="nc-icon-mini nc-fw ui-1_calendar-57"></i>
+                </button>
               </span>
             </div>
           </figure>
@@ -1180,11 +1186,12 @@
             <div class="input-group custom-daterange">
 
               <div class="input-group-btn">
-
                 <button aria-expanded="false" aria-haspopup="true" class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+                  <i class="nc-icon-mini nc-fw ui-1_calendar-57"></i>
                   {{inputs.customRange.selected.label}}
-                  <i class="nc-icon-mini arrows-2_small-down"></i>
+                   <i class="nc-icon-mini arrows-2_small-down"></i>
                 </button>
+
 
                 <ul class="dropdown-menu">
                   <li ng-init="inputs.customRange.init()" ng-repeat="item in inputs.customRange.items">
@@ -1210,9 +1217,9 @@
                 </div>
               </div>
 
-              <div class="input-group-addon">
-                <i class="nc-icon-mini nc-fw ui-1_calendar-57"></i>
-              </div>
+              <!-- <div class="input-group-addon">
+                <i class="fa fa-fw fa-calendar"></i>
+              </div> -->
 
             </div>
           </figure>

@@ -18,6 +18,12 @@
         border-bottom-right-radius: 0;
       }
 
+      &:last-child {
+        border-bottom: solid 1px $pb-bg5;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+
       &:hover {
         background-color: $bg-hover;
       }
@@ -27,6 +33,7 @@
           background-color: $table-bg-active;
         }
       }
+
     }
 
   }

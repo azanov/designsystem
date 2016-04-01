@@ -4,8 +4,8 @@
 
   angular.module('pb.ds.content').config(function($stateProvider) {
     $stateProvider.state('content', {
+      url: '',
       abstract: true,
-      url: '/content',
       templateUrl: 'modules/content/templates/content.html',
       controller: 'ContentController as content',
       data: {
@@ -14,8 +14,14 @@
         bodyClass: 'content'
       }
     })
-    
-    .state('content.page', {
+
+    .state('content.overview', {
+      url: '/content/overview',
+      abstract: true,
+      templateUrl: 'modules/content/templates/content-page.html'
+    })
+
+    .state('content.overview.page', {
       url: '',
       views: {
         overview: {
@@ -35,6 +41,16 @@
         pageTitle: 'Content',
         access: 'public',
         bodyClass: 'content'
+      }
+    })
+
+    .state('content.emails', {
+      url: '/content/emails',
+      templateUrl: 'modules/content/templates/content-emails.html',
+      data: {
+        pageTitle: 'Content - Emails',
+        access: 'public',
+        bodyClass: 'content emails'
       }
     });
 

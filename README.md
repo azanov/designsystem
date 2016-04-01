@@ -13,10 +13,19 @@ _Do not use vendor.js in your application! This is the minified/concatonated thi
 
 **Bower Install**
 
-Preferred installation is via [Bower](http://www.bower.io):
+Installation via [Bower](http://www.bower.io):
 
 ```shell
 bower install pb-design-system --save
+```
+<br>
+
+**NPM Install**
+
+Installation via [npm](https://www.npmjs.com/):
+
+```shell
+npm install pb-design-system --save
 ```
 <br>
 

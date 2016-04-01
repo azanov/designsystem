@@ -16,9 +16,10 @@
         <div class="col-md-12">
           <ul class="list-unstyled list-inline jump-menu">
             <li><a ui-sref="patterns.errorpages({'#':'guidelines'})">Guidelines</a></li>
-            <li><a ui-sref="patterns.errorpages({'#':'404'})">404</a></li>
-            <li><a ui-sref="patterns.errorpages({'#':'500'})">500</a></li>
-            <li><a ui-sref="patterns.errorpages({'#':'variations'})">Variations</a></li>
+            <li><a ui-sref="patterns.errorpages({'#':'400'})">400 series</a></li>
+            <li><a ui-sref="patterns.errorpages({'#':'500'})">500 series</a></li>
+            <li><a ui-sref="patterns.errorpages({'#':'signed-out'})">Signed Out</a></li>
+            <li><a ui-sref="patterns.errorpages({'#':'maintenance'})">Maintenance</a></li>
           </ul>
         </div>
       </div>
@@ -43,27 +44,66 @@
     <div class="col-md-8">
       <p>Error pages should:</p>
       <ul>
-        <li>Use iconography when possible</li>
+        <li>Spell out the problem in plain, friendly, non-alarmist language</li>
+        <li>Never contain exclamation points or question marks in headers</li>
+        <li>Provide the user with ideas for solving the problem</li>
+        <li>Provide only highly relevant links</li>
         <li>Never exceed six columns in our grid</li>
-        <li>Be written using plain, friendly and non-alarmist language</li>
-        <li>Use sentence capitalization with a concluding period in headers</li>
+        <li>Include a support contact</li>
+        <li>Format headers in sentence caps with a concluding period</li>
+        <li>Format bullet copy in sentence caps with no concluding period</li>
       </ul>
     </div>
   </div>
 
 
+
+
   <!-- 404 -->
   <div class="row" >
     <div class="col-md-8">
-      <h1 id="404" class="doc-head">404 Error Page</h1>
+      <h1 id="400" class="doc-head">400 Series Error Pages</h1>
+    </div>
+  </div>
+
+
+  <div class="row doc-sectionbreak">
+    <div class="col-md-6">
+      <figcaption>400 Bad Request (Left Aligned)</figcaption>
+      <a href="" ui-sref="errors-400-left" target="_blank"><img class="img-responsive framed" src="modules/patterns/assets/images/400-left.jpg" /></a>
+    </div>
+
+    <div class="col-md-6">
+      <figcaption>400 Bad Request (Center Aligned)</figcaption>
+      <a href="" ui-sref="errors-400-centered" target="_blank"><img class="img-responsive framed" src="modules/patterns/assets/images/400-center.jpg" /></a>
+    </div>
+  </div>
+
+
+  <div class="row doc-sectionbreak">
+    <div class="col-md-6">
+      <figcaption>401 Unauthorized (Left Aligned)</figcaption>
+      <a href="" ui-sref="errors-401-left" target="_blank"><img class="img-responsive framed" src="modules/patterns/assets/images/401-left.jpg" /></a>
+    </div>
+
+    <div class="col-md-6">
+      <figcaption>401 Unauthorized (Center Aligned)</figcaption>
+      <a href="" ui-sref="errors-401-centered" target="_blank"><img class="img-responsive framed" src="modules/patterns/assets/images/401-center.jpg" /></a>
     </div>
   </div>
 
   <div class="row doc-sectionbreak">
-    <div class="col-md-8">
-      <a href="" ui-sref="errors-404-left" target="_blank"><img class="img-responsive framed" src="modules/patterns/assets/images/error-404-left.jpg" /></a>
+    <div class="col-md-6">
+      <figcaption>404 Page Not Found (Left Aligned)</figcaption>
+      <a href="" ui-sref="errors-404-left" target="_blank"><img class="img-responsive framed" src="modules/patterns/assets/images/404-left.jpg" /></a>
+    </div>
+
+    <div class="col-md-6">
+      <figcaption>404 Page Not Found (Center Aligned)</figcaption>
+      <a href="" ui-sref="errors-404-centered" target="_blank"><img class="img-responsive framed" src="modules/patterns/assets/images/404-center.jpg" /></a>
     </div>
   </div>
+
 
 
 
@@ -75,46 +115,94 @@
   </div>
 
   <div class="row doc-sectionbreak">
-    <div class="col-md-8">
-      <a href="" ui-sref="errors-500-left" target="_blank"><img class="img-responsive framed" src="modules/patterns/assets/images/error-500-left.jpg" /></a>
+    <div class="col-md-6">
+      <figcaption>500 Internal Server (Left Aligned)</figcaption>
+      <a href="" ui-sref="errors-500-left" target="_blank"><img class="img-responsive framed" src="modules/patterns/assets/images/500-left.jpg" /></a>
+    </div>
+
+    <div class="col-md-6">
+      <figcaption>500 Internal Server (Center Aligned)</figcaption>
+      <a href="" ui-sref="errors-500-centered" target="_blank"><img class="img-responsive framed" src="modules/patterns/assets/images/500-center.jpg" /></a>
+    </div>
+  </div>
+
+  <div class="row doc-sectionbreak">
+    <div class="col-md-6">
+      <figcaption>502 Bad Gateway (Left Aligned)</figcaption>
+      <a href="" ui-sref="errors-502-left" target="_blank"><img class="img-responsive framed" src="modules/patterns/assets/images/502-left.jpg" /></a>
+    </div>
+
+    <div class="col-md-6">
+      <figcaption>502 Bad Gateway (Center Aligned)</figcaption>
+      <a href="" ui-sref="errors-502-centered" target="_blank"><img class="img-responsive framed" src="modules/patterns/assets/images/502-center.jpg" /></a>
+    </div>
+  </div>
+
+  <div class="row doc-sectionbreak">
+    <div class="col-md-6">
+      <figcaption>504 Gateway Timeout (Left Aligned)</figcaption>
+      <a href="" ui-sref="errors-504-left" target="_blank"><img class="img-responsive framed" src="modules/patterns/assets/images/504-left.jpg" /></a>
+    </div>
+
+    <div class="col-md-6">
+      <figcaption>504 Gateway Timeout (Center Aligned)</figcaption>
+      <a href="" ui-sref="errors-504-centered" target="_blank"><img class="img-responsive framed" src="modules/patterns/assets/images/504-center.jpg" /></a>
     </div>
   </div>
 
 
 
-  <!-- OTHER -->
+
+  <!-- Signed Out -->
   <div class="row" >
     <div class="col-md-8">
-      <h1 id="variations" class="doc-head">Variations</h1>
+      <h1 id="signed-out" class="doc-head">Signed Out</h1>
     </div>
   </div>
 
+  <div class="row doc-sectionbreak">
+    <div class="col-md-6">
+      <figcaption>Left Aligned</figcaption>
+      <a href="" ui-sref="errors-signed-out-left" target="_blank"><img class="img-responsive framed" src="modules/patterns/assets/images/signed-out-left.jpg" /></a>
+    </div>
+
+    <div class="col-md-6">
+      <figcaption>Center Aligned</figcaption>
+      <a href="" ui-sref="errors-signed-out-centered" target="_blank"><img class="img-responsive framed" src="modules/patterns/assets/images/signed-out-center.jpg" /></a>
+    </div>
+  </div>
+
+
+
+
+  <!-- Maintenance -->
   <div class="row" >
-    <div class="col-md-12">
-      <h1 class="doc-sectionhead">404</h1>
-    </div>
-  </div>
-
-  <div class="row">
     <div class="col-md-8">
-      <a href="" ui-sref="errors-404-centered" target="_blank">
-        <img class="img-responsive framed" src="modules/patterns/assets/images/error-404-centered.jpg" />
-      </a>
-      <a href="" ui-sref="errors-404-centered-search" target="_blank">
-        <img class="img-responsive framed spacer-top-lg" src="modules/patterns/assets/images/error-404-centered-search.jpg" />
-      </a>
+      <h1 id="maintenance" class="doc-head">Maintenance</h1>
     </div>
   </div>
 
-  <div class="row" >
-    <div class="col-md-12">
-      <h1 class="doc-sectionhead">500</h1>
+  <div class="row doc-sectionbreak">
+    <div class="col-md-6">
+      <figcaption>Planned Maintenance (Left Aligned)</figcaption>
+      <a href="" ui-sref="errors-planned-maintenance-left" target="_blank"><img class="img-responsive framed" src="modules/patterns/assets/images/planned-maintenance-left.jpg" /></a>
+    </div>
+
+    <div class="col-md-6">
+      <figcaption>Planned Maintenance (Center Aligned)</figcaption>
+      <a href="" ui-sref="errors-planned-maintenance-centered" target="_blank"><img class="img-responsive framed" src="modules/patterns/assets/images/planned-maintenance-center.jpg" /></a>
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-md-8">
-      <a href="" ui-sref="errors-500-centered" target="_blank"><img class="img-responsive framed spacer-top-md spacer-bottom-xl" src="modules/patterns/assets/images/error-500-centered.jpg" /></a>
+  <div class="row doc-sectionbreak">
+    <div class="col-md-6">
+      <figcaption>Unplanned Maintenance (Left Aligned)</figcaption>
+      <a href="" ui-sref="errors-unplanned-maintenance-left" target="_blank"><img class="img-responsive framed" src="modules/patterns/assets/images/unplanned-maintenance-left.jpg" /></a>
+    </div>
+
+    <div class="col-md-6">
+      <figcaption>Unplanned Maintenance (Center Aligned)</figcaption>
+      <a href="" ui-sref="errors-unplanned-maintenance-centered" target="_blank"><img class="img-responsive framed" src="modules/patterns/assets/images/unplanned-maintenance-center.jpg" /></a>
     </div>
   </div>
 

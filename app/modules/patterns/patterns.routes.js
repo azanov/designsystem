@@ -27,6 +27,21 @@
       }
     })
 
+    .state('patterns.dragdrop', {
+      url: '/dragdrop',
+      templateUrl: 'modules/patterns/templates/drag-drop.html',
+      controller: 'DragDropController as dragdrop',
+      resolve: {
+        MockData: function(MockDataFactory) {
+          return MockDataFactory.query({filename:'data'});
+        }
+      },
+      data: {
+        pageTitle: 'Patterns - Drag Drop',
+        access: 'public',
+        bodyClass: 'patterns dragdrop'
+      }
+    })
 
     .state('patterns.isotope', {
       url: '/isotope',
@@ -43,6 +58,7 @@
         bodyClass: 'isotope'
       }
     })
+
 
     .state('patterns.welcome', {
       url: '/welcome',
@@ -294,7 +310,7 @@
     })
 
     .state('patterns.facetedsearch', {
-      url: '/facetedsearch',
+      url: '/patterns/facetedsearch',
       templateUrl: 'modules/patterns/templates/faceted-search.html'
     })
 
@@ -316,7 +332,6 @@
       templateUrl: 'modules/patterns/templates/forgot-password.html',
       controller: 'ForgotPasswordController as forgot'
     })
-
 
 
     .state('patterns.registration', {

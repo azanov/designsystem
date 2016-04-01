@@ -2,7 +2,7 @@
 
 #header, header {
   @extend %gradient;
-  z-index: 10;
+  z-index: 20;
   .navbar {
     margin-bottom: 0;
     li.first a {

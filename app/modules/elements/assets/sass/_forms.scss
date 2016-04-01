@@ -1,5 +1,5 @@
 //* -- FORMS -- */
-// scss-lint:disable VendorPrefix
+// scss-lint:disable VendorPrefix ImportantRule
 ::-webkit-input-placeholder {
   font-family: $font-family-sans-serif;
   color: $input-color-placeholder !important;
@@ -138,9 +138,9 @@ a.list-group-item {
   }
 
   .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
-    background-color: #f0f0f0;
+    background-color: #f8f8f8 !important;
     border-color: #dbdbdb;
-    color: #c0c0c0;
+    color: #454545;
     opacity: 1;
 }
 
@@ -152,10 +152,12 @@ a.list-group-item {
 
   &[disabled],
   fieldset[disabled] & {
-    background-color: #f8f8f8;
+    background-color: #f8f8f8 !important;
     border-color: $input-border-disabled;
     color: #454545;
     cursor: $cursor-disabled;
+    -webkit-text-fill-color: #454545; // to force correct color in Safari
+    -webkit-opacity: 1;
     opacity: 1; // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655
     box-shadow: none;
   }

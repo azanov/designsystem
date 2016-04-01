@@ -1,54 +1,47 @@
 .errors {
-  .main {
-    margin-top: 200px;
-  }
+
   .site-content {
     min-height: calc(100vh - (50px + 35px)); //HACK: why is this different?
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
+  .icon {
+    text-align: center;
+  }
+
+  .main {
+    margin-top: 100px;
+    align-self: center;
+  }
+
+
   &.errors-centered {
+
+    .site-content {
+      flex-direction: column;
+    }
+
     .main {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      h1 {
-        margin-bottom: 0;
-      }
+      text-align: center;
     }
-    .search-field {
-      width: 500px;
-      .input-group {
-        margin-bottom: 15px;
-      }
-    }
-    .text {
-      display: flex;
-      h2 {
-        // margin-top: 10px;
-      }
-      > div {
-        margin: 0 20px;
-      }
-    }
-    @include breakpoint(screen-xs) {
-      .main {
-        margin-top: 80px;
-        h1 {
-          text-align: center;
-        }
-      }
-      .search-field {
-        width: auto;
-      }
 
-      .text {
-        flex-direction: column;
-        h2 {
-          margin-top: 20px;
-          margin-bottom: 5px;
-        }
-      }
+  }
+
+
+  @include breakpoint(screen-xs) {
+    .main {
+      margin-top: 80px;
+    }
+
+    .icon {
+      text-align: left;
     }
   }
+
 }
