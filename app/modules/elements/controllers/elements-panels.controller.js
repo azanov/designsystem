@@ -23,7 +23,7 @@
         _this.millercolumn.dataSelected = index;
         _this.millercolumn.level1Selected = null;
         cfpLoadingBar.complete();
-      }, 1500);
+      }, 750);
 
       // $log.debug(item);
     };

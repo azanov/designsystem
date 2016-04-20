@@ -183,3 +183,11 @@ th.centered {
     }
   }
 }
+
+
+.table-striped > tbody > tr:nth-of-type(even) {
+  background-color: $table-bg-accent;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #fff;
+}
