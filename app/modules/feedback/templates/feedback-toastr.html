@@ -19,22 +19,41 @@
   <div class="row">
     <div class="col-md-12">
       <h2 class="doc-sectionhead">Usage</h2>
+      <p>Toastr Alert Demos (Click Image to view Toastr Sample)</p>
     </div>
   </div>
 
 
-  <div class="row spacer-top-sm">
-    <div class="col-md-10">
-      <figure>
-        <figcaption>Toastr Alerts</figcaption>
-        <button class="btn btn-info" ng-click="toastr.toast.info()">Info</button>
-        <button class="btn btn-success" ng-click="toastr.toast.success()">Success</button>
-        <button class="btn btn-warning" ng-click="toastr.toast.warning()">Warning</button>
-        <button class="btn btn-danger" ng-click="toastr.toast.danger()">Error</button>
-        <button class="btn btn-default" ng-click="toastr.toast.closeButton()">With Close Button</button>
-        <button class="btn btn-default" ng-click="toastr.toast.progressBar()">With Progress Bar</button>
-      </figure>
-
+  <div class="row spacer-top-sm toastr-samples">
+    <div class="col-md-4">
+        <figure>
+          <figcaption>Danger</figcaption>
+          <img class="img-responsive" src="modules/feedback/assets/images/error.png" ng-click="toastr.toast.danger()">
+        </figure>
+        <figure>
+          <figcaption>Warning</figcaption>
+          <img class="img-responsive" src="modules/feedback/assets/images/warning.png" ng-click="toastr.toast.warning()">
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <figure>
+          <figcaption>Success</figcaption>
+          <img class="img-responsive" src="modules/feedback/assets/images/success.png" ng-click="toastr.toast.success()">
+        </figure>
+        <figure>
+          <figcaption>Info</figcaption>
+          <img class="img-responsive" src="modules/feedback/assets/images/info.png" ng-click="toastr.toast.info()">
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <figure>
+          <figcaption>Info</figcaption>
+          <img class="img-responsive" src="modules/feedback/assets/images/closebutton.png" ng-click="toastr.toast.closeButton()">
+        </figure>
+        <figure>
+          <figcaption>Info</figcaption>
+          <img class="img-responsive" src="modules/feedback/assets/images/progressbar.png" ng-click="toastr.toast.progressBar()">
+        </figure>
     </div>
   </div>
 
