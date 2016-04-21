@@ -8,59 +8,33 @@
   </div>
 
   <div class="row">
-    <div class="col-md-8">
-      <p>A "Toastr" is a notification that pops up at a specified position. They are available in the same 4 styles as alerts, and can be set to either self-dismiss after a specified amount of time or stay open until manually dismissed. A Toastr is always dismissable by clicking on it. They can be set to appear top right (default, preferred), any of the other 3 corners, or centered. Whichever position is used should remain consistent throughout the application.</p>
-    </div>
-    <div class="col-md-4">
-      <a class="more-info plugin" href="http://foxandxss.github.io/angular-toastr/" target="_blank">angular-toastr v1.7.0</a>
-    </div>
-  </div>
-
-  <div class="row">
     <div class="col-md-12">
       <h2 class="doc-sectionhead">Usage</h2>
-      <p>Toastr Alert Demos (Click Image to view Toastr Sample)</p>
+      <a class="more-info plugin" href="http://foxandxss.github.io/angular-toastr/" target="_blank">angular-toastr v1.7.0</a>
+
     </div>
   </div>
 
 
-  <div class="row spacer-top-sm toastr-samples">
-    <div class="col-md-4">
-        <figure>
-          <figcaption>Danger</figcaption>
-          <img class="img-responsive" src="modules/feedback/assets/images/error.png" ng-click="toastr.toast.danger()">
-        </figure>
-        <figure>
-          <figcaption>Warning</figcaption>
-          <img class="img-responsive" src="modules/feedback/assets/images/warning.png" ng-click="toastr.toast.warning()">
-        </figure>
-      </div>
-      <div class="col-md-4">
-        <figure>
-          <figcaption>Success</figcaption>
-          <img class="img-responsive" src="modules/feedback/assets/images/success.png" ng-click="toastr.toast.success()">
-        </figure>
-        <figure>
-          <figcaption>Info</figcaption>
-          <img class="img-responsive" src="modules/feedback/assets/images/info.png" ng-click="toastr.toast.info()">
-        </figure>
-      </div>
-      <div class="col-md-4">
-        <figure>
-          <figcaption>Info</figcaption>
-          <img class="img-responsive" src="modules/feedback/assets/images/closebutton.png" ng-click="toastr.toast.closeButton()">
-        </figure>
-        <figure>
-          <figcaption>Info</figcaption>
-          <img class="img-responsive" src="modules/feedback/assets/images/progressbar.png" ng-click="toastr.toast.progressBar()">
-        </figure>
+  <div class="row spacer-top-sm">
+    <div class="col-md-10">
+      <figure>
+        <figcaption>Toastr Alerts</figcaption>
+        <button class="btn btn-info" ng-click="toastr.toast.info()">Info</button>
+        <button class="btn btn-success" ng-click="toastr.toast.success()">Success</button>
+        <button class="btn btn-warning" ng-click="toastr.toast.warning()">Warning</button>
+        <button class="btn btn-danger" ng-click="toastr.toast.danger()">Error</button>
+        <button class="btn btn-default" ng-click="toastr.toast.closeButton()">With Close Button</button>
+        <button class="btn btn-default" ng-click="toastr.toast.progressBar()">With Progress Bar</button>
+      </figure>
+
     </div>
   </div>
 
   <div class="row">
     <div class="col-md-12">
       <h2 class="doc-sectionhead">Writing Toastr Copy</h2>
-      <p>When writing toastr alert messages, follow the same principles of writing as you would for other alerts.</p>
+      <p class="doc-lede">When writing toastr alert messages, follow the same principles of writing as you would for other alerts.</p>
 
     </div>
   </div>

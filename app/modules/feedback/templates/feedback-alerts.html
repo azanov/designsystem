@@ -42,107 +42,93 @@
   </div>
 
 
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="doc-sectionhead">Default Alerts</h2>
+    </div>
+  </div>
 
   <div class="row">
-    <div class="col-md-4">
-      <h2 class="doc-sectionhead">Default Alerts</h2>
-      <p>For use in most situations where an in-line alert is needed.</p>
-
-
+    <div class="col-md-8">
       <figure>
         <figcaption>Error</figcaption>
         <div class="alert alert-danger">
-          <strong>Sorry.</strong> We couldn’t complete your request. Please try again in a moment.
+          We couldn’t complete your request. Please try again in a moment.
         </div>
-
-        <div class="alert alert-danger">
-          <strong>Two lines.</strong> Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean eu leo quam.
-        </div>
-
       </figure>
 
       <figure>
         <figcaption>Warning</figcaption>
         <div class="alert alert-warning">
-          <strong>Warning!</strong> You are about to delete all of your addresses.
+          Enter a valid date using mm/dd/yyyy.
         </div>
       </figure>
 
       <figure>
         <figcaption>Success</figcaption>
         <div class="alert alert-success">
-          <strong>All set!</strong> You’re ready to start shipping with UPS.
+          A new address was imported.
         </div>
       </figure>
 
       <figure>
         <figcaption>Info</figcaption>
         <div class="alert alert-info">
-          <strong>Note:</strong> You’ll need to get this sticker from the Post Office.
-        </div>
-      </figure>
-    </div>
-    <div class="col-md-4 col-md-offset-2">
-      <h2 class="doc-sectionhead">Box-less Alerts</h2>
-      <p>For use in tight situations where a box would add too much clutter.</p>
-      <figure>
-        <figcaption>Error</figcaption>
-        <div class="alert alert-danger alert-boxless">
-          <strong>Sorry.</strong> We couldn’t complete your request. Please try again in a moment.
-        </div>
-
-        <div class="alert alert-danger alert-boxless">
-          <strong>Two lines.</strong> Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean eu leo quam.
-        </div>
-
-      </figure>
-
-      <figure>
-        <figcaption>Warning</figcaption>
-        <div class="alert alert-warning alert-boxless">
-          <strong>Warning!</strong> You are about to delete all of your addresses.
+          Learn more about Cost Accounts in the Help section.
         </div>
       </figure>
 
-      <figure>
-        <figcaption>Success</figcaption>
-        <div class="alert alert-success alert-boxless">
-          <strong>All set!</strong> You’re ready to start shipping with UPS.
-        </div>
-      </figure>
-
-      <figure>
-        <figcaption>Info</figcaption>
-        <div class="alert alert-info alert-boxless">
-          <strong>Note:</strong> You’ll need to get this sticker from the Post Office.
-        </div>
-      </figure>
     </div>
   </div>
+
+
+
 
 
 
   <div class="row">
     <div class="col-md-12">
       <h2 class="doc-sectionhead">Dismissable Alerts</h2>
-      <p>Alerts can be dismissable, where clicking the "close" icon removes the alert</p>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-8">
       <figure>
-        <figcaption>Sample Dismissable Alert</figcaption>
+        <figcaption>Error</figcaption>
         <div class="alert alert-danger">
           <button aria-hidden="true" class="close" data-dismiss="alert" type="button"></button>
           We couldn’t complete your request. Please try again in a moment.
         </div>
       </figure>
+
+      <figure>
+        <figcaption>Warning</figcaption>
+        <div class="alert alert-warning">
+          <button aria-hidden="true" class="close" data-dismiss="alert" type="button"></button>
+          Enter a valid date using mm/dd/yyyy.
+        </div>
+      </figure>
+
+      <figure>
+        <figcaption>Success</figcaption>
+        <div class="alert alert-success">
+          <button aria-hidden="true" class="close" data-dismiss="alert" type="button"></button>
+          A new address was imported.
+        </div>
+      </figure>
+
+      <figure>
+        <figcaption>Info</figcaption>
+        <div class="alert alert-info">
+          <button aria-hidden="true" class="close" data-dismiss="alert" type="button"></button>
+          Learn more about Cost Accounts in the Help section.
+        </div>
+      </figure>
+
     </div>
+
   </div>
-
-
-
 
 
   <div class="row">
@@ -156,7 +142,7 @@
       <figure>
         <figcaption>Collapsible Panel with Error Message</figcaption>
         <div class="panel panel-filled-heading panel-default">
-          <div class="panel-heading panel-toggle panel-heading-danger" ng-click="alerts.error.open = !alerts.error.open">Shipping Address <i class="nc-icon-mini arrows-2_small-right pull-right transition-all" ng-class="{'rotate-90': !alerts.error.open}"></i></div>
+          <div class="panel-heading panel-toggle" ng-click="alerts.error.open = !alerts.error.open"><i class="nc-icon-mini ui-2_alert-circle- text-danger"></i> Shipping Address <i class="nc-icon-mini arrows-2_small-right pull-right transition-all" ng-class="{'rotate-90': !alerts.error.open}"></i></div>
           <div uib-collapse="alerts.error.open">
             <div class="panel-body">
               <div class="alert alert-danger">
@@ -180,7 +166,7 @@
       <figure>
         <figcaption>Collapsible Panel with Success Message</figcaption>
         <div class="panel panel-filled-heading panel-default">
-          <div class="panel-heading panel-toggle panel-heading-success" ng-click="alerts.success.open = !alerts.success.open">Shipping Address <i class="nc-icon-mini arrows-2_small-right pull-right transition-all" ng-class="{'rotate-90': !alerts.success.open}"></i></div>
+          <div class="panel-heading panel-toggle" ng-click="alerts.success.open = !alerts.success.open"><i class="nc-icon-mini ui-1_check-circle-08 text-success"></i> Shipping Address <i class="nc-icon-mini arrows-2_small-right pull-right transition-all" ng-class="{'rotate-90': !alerts.success.open}"></i></div>
           <div uib-collapse="alerts.success.open">
             <div class="panel-body">
               <div class="alert alert-success">
