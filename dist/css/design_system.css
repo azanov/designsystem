@@ -2,7 +2,7 @@
  * DesignSystem - 
  * @version v2.6.0
  * @link http://guxstaging.pbi.global.pvt/design_system
- * Built Tue Apr 19 2016 10:30:03 GMT-0400 (EDT) 
+ * Built Thu Apr 21 2016 12:46:47 GMT-0400 (EDT) 
  */
 @charset "UTF-8";
 #header, header, .signin, .landing .bg {
@@ -14583,6 +14583,12 @@ td.centered, th.centered {
   font-size: 13px; }
 .table-condensed-extra > thead > tr > th, .table-condensed-extra > thead > tr > td, .table-condensed-extra > tbody > tr > th, .table-condensed-extra > tbody > tr > td, .table-condensed-extra > tfoot > tr > th, .table-condensed-extra > tfoot > tr > td {
   padding: 2px 5px; }
+
+.table-striped > tbody > tr:nth-of-type(even) {
+  background-color: #f9f9f9; }
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #fff; }
 
 .table-open > thead > tr > th, .table-open > thead > tr > td, .table-open > tbody > tr > th, .table-open > tbody > tr > td, .table-open > tfoot > tr > th, .table > tfoot > tr > td {
   border-top: 1px solid #C5CBE3;
