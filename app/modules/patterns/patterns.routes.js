@@ -143,7 +143,7 @@
         templateUrl: 'modules/patterns/templates/forgot-password-email.html',
         controller: 'SignInController as signin',
         data: {
-          pageTitle: 'Patterns: Forgot Password',
+          pageTitle: 'Patterns: Forgot Password Email',
           bodyClass: 'fullscreen signin'
         }
       })
@@ -154,7 +154,7 @@
         templateUrl: 'modules/patterns/templates/forgot-password-question.html',
         controller: 'SignInController as signin',
         data: {
-          pageTitle: 'Patterns: Forgot Password',
+          pageTitle: 'Patterns: Forgot Password: Question',
           bodyClass: 'fullscreen signin'
         }
       })
@@ -165,7 +165,7 @@
         templateUrl: 'modules/patterns/templates/forgot-password-error.html',
         controller: 'SignInController as signin',
         data: {
-          pageTitle: 'Patterns: Forgot Password',
+          pageTitle: 'Patterns: Forgot Password: Error',
           bodyClass: 'fullscreen signin'
         }
       })
