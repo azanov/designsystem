@@ -212,12 +212,22 @@
       displayDate: function (start, end) {
         var startDate = start || _this.daterangepicker3.date.startDate;
         var endDate = end || _this.daterangepicker3.date.endDate;
+        var today = moment();
 
         var dateDiff = endDate.diff(startDate, 'days');
         var result = '';
 
         if (dateDiff === 0) {
-          result = 'Today ' + moment(startDate).format('MM/DD/YYYY');
+          var isDaySame = startDate.isSame(today, 'day');
+          var isMonthSame = startDate.isSame(today, 'month');
+          var isYearSame = startDate.isSame(today, 'year');
+
+          // if the selected date is the same as today date, display "Today" in the result
+          if (isDaySame && isMonthSame && isYearSame) {
+            result = 'Today ' + moment(startDate).format('MM/DD/YYYY');
+          } else {
+            result = moment(startDate).format('MM/DD/YYYY');
+          }
         } else if (dateDiff === 6) {
           result = 'Last 7 days';
         } else {
